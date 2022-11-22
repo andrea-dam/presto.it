@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Item;
 use Livewire\Component;
+use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 
 class CreateItemForm extends Component
@@ -13,7 +14,7 @@ class CreateItemForm extends Component
 
     protected $rules = [
         'title' => 'required|min:2',
-        'category' => 'required|min:2',
+        'category' => 'required',
         'description' => 'required|min:2'
     ];
     
@@ -23,22 +24,25 @@ class CreateItemForm extends Component
 
     public function store(){
 
+        // $itemCategory = Category::find($this->category);
+        // dd($itemCategory);
         $this->validate();
 
         $item = Item::create([
             'title' => $this->title,
-            'category' => $this->category,
+            'category_id' => $this->category,
             'description' => $this->description,
             'user_id' => Auth::user()->id
         ]);
 
-        session()->flash('itemCreated', 'hai creato con successo il tuo annuncio!');
+        session()->flash('itemCreated', 'Hai inserito con successo il tuo annuncio!');
         $this->reset();
     }
 
 
     public function render()
     {
-        return view('livewire.create-item-form');
+        $categories = Category::all();
+        return view('livewire.create-item-form', compact('categories'));
     }
 }
