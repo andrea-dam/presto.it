@@ -24,16 +24,21 @@
                     </ul>
                 </li>
             </ul>
-            @guest
             <ul class="navbar-nav mb-2 mb-lg-0">
+                @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Accedi</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('register')}}">Registrati</a>
                 </li>
+                @else
+                <li class="nav-item">
+                    <a class="nav-link" href="" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">Logout</a>
+                    <form action="{{route('logout')}}" class="d-none" id="logout-form" method="POST">@csrf</form>
+                </li>
+                @endguest
             </ul>
-            @endguest
         </div>
     </div>
 </nav>
