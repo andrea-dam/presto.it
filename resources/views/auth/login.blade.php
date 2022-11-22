@@ -1,7 +1,7 @@
 <x-layout>
     <main class="container my-5">
-        <div class="row justify-content-center">
-            
+        
+        <div class="row justify-content-center">  
             {{-- Se uno o più dati non sono stati inseriti correttamente --}}
             @if ($errors->any())
             <div class="col-12 col-md-8 alert alert-danger">
@@ -14,6 +14,11 @@
             @endif
             
             <div class="col-12 col-md-5">
+                @if(session()->has('login'))
+                <div class="alert alert-danger text-center p-2">
+                    {{session('login')}}
+                </div>
+                @endif  
                 <form method="POST" action="{{route('login')}}">
                     @csrf
                     <div class="mb-4">

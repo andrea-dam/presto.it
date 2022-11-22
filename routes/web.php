@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ItemController;
 use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 // Rotte Public
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+
+// rotte item
+Route::get('/item/create', [ItemController::class, 'create'])->name('item.create');
