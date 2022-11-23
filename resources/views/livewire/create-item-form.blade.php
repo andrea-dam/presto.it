@@ -1,4 +1,4 @@
-<div class="p-2 container my-5 border border-black">
+<div class="container my-5">
   <div class="row align-items-center">
     <div class="col-6 d-flex flex-column align-items-center">
       <h2 class="text-center">Il tuo annuncio apparirà così:</h2>
@@ -13,7 +13,8 @@
             @endforeach
           </h5>
           <p class="card-text">Descrizione: {{$description}}</p>
-          <button href="#" class="btn btn-primary">Go somewhere</button>
+          <p class="card-text">Prezzo: {{$price}}</p>
+          <button href="#" class="btn btn-primary">Dettaglio</button>
         </div>
       </div>    
     </div>
@@ -26,7 +27,9 @@
         @endif
         @csrf
         <div class="mb-3">
-          <label for="title" class="form-label">Nome articolo *</label>
+          <div class="d-flex justify-content-between">
+          <label for="title" class="form-label">Nome articolo *</label><span class="fst-italic text-muted">I campi contrassegnati con * sono obbligatori</span>
+          </div>
           <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model.lazy="title">
           @error('title')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
@@ -42,10 +45,15 @@
         </div>
         <div class="mb-3">
           <label for="description" class="form-label">Descrivi il tuo articolo *</label>
-          <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror" id="description" cols="30" rows="10"></textarea>
+          <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror" id="description" rows="5"></textarea>
           @error('description')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="mb-3">
+            <label for="price" class="form-label">Prezzo *</label>
+            <input type="text" class="form-control @error('title') is-invalid @enderror" id="price" wire:model.lazy="price">
+            @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
+          </div>
+        <button type="submit" class="btn btn-primary">Pubblica Annuncio</button>
       </form>
     </div>
   </div>

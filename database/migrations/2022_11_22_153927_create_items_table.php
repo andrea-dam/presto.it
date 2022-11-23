@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->tinyText('title');
             $table->longText('description');
+            $table->float('price');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

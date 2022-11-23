@@ -10,28 +10,31 @@ use Illuminate\Support\Facades\Auth;
 class CreateItemForm extends Component
 {
 
-    public $title, $category, $description;
+    public $title, $category, $description, $price;
 
     protected $rules = [
         'title' => 'required|min:2',
         'category' => 'required',
-        'description' => 'required|min:2'
+        'description' => 'required|min:2',
+        'price' => 'required|regex:/^[0-9\.,]+$/|not_in:0'
     ];
     
     public function updated($propertyName){
+        
         $this->validateOnly($propertyName);
     }
 
     public function store(){
+        $numFormat = str_replace(",",".",$this->price);
+        $secondFloatRound = number_format((float)$numFormat, 2);
 
-        // $itemCategory = Category::find($this->category);
-        // dd($itemCategory);
         $this->validate();
-
+      
         $item = Item::create([
             'title' => $this->title,
             'category_id' => $this->category,
             'description' => $this->description,
+            'price' => $secondFloatRound,
             'user_id' => Auth::user()->id
         ]);
 
