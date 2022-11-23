@@ -45,6 +45,11 @@
           <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror" id="description" cols="30" rows="10"></textarea>
           @error('description')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Prezzo *</label>
+            <input type="text" class="form-control @error('title') is-invalid @enderror" id="price" wire:model.lazy="price">
+            @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
+          </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
