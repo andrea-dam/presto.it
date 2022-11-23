@@ -2,32 +2,6 @@
 /*font-family: 'Kaushan Script', cursive; 
  font-family: 'Cabin', sans-serif;
 font-family: 'Catamaran', sans-serif;*/
-
-*{
-    font-family: 'Catamaran', sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Cabin', sans-serif;
-}
-
-#title{
-    /* font-family: 'Kaushan Script', cursive;
-    font-weight: 400 !important;  */
-    font-family: 'Cabin', sans-serif;
-
-}
-
-/* Sfondo */
-.sfondo{
-    background-image:linear-gradient(0deg, rgba(231,207,188,.5) 24%, rgba(95, 26, 55,.5) 81%), url("/public/media/legno.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 100vh;
-   
-}
-
-
 /* Palette di colori */
 
 :root {
@@ -36,8 +10,15 @@ h1,h2,h3,h4,h5,h6{
     --third: #33658aff;
     --fourth: #fff4ecff;
     --fifth: #5f1a37ff;
-  }
+}
 
+* {
+    font-family: 'Catamaran', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabin', sans-serif;
+}
 
 /* Navbar */
 .navbar{
@@ -49,4 +30,27 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
 }
 
+#title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 150px;
+    color: var(--second);
+    text-shadow: 5px 3px 8px black;
+}
+
+#logo-navbar {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 46px;
+}
+
+/* Sfondo */
+.sfondo{
+    background-image:linear-gradient(0deg, rgb(231, 207, 188) 24%, rgba(95, 26, 55,.5) 81%), url("/public/media/legno.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 85vh;
+}
+
+.bg-uno {
+    background-color: var(--second);
+}
 
