@@ -17,7 +17,9 @@
                     <a class="nav-link" href="{{route('item.create')}}">Inserisci un Annuncio</a>
                 </li>
                 @endauth
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('item.index')}}">Tutti gli Annunci</a>
+                </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
                 @guest
