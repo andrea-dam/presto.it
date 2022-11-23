@@ -20,3 +20,4 @@ Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 // rotte item
 Route::get('/item/create', [ItemController::class, 'create'])->name('item.create');
 Route::get('/item/index', [ItemController::class, 'index'])->name('item.index');
+Route::get('/item/show/{item}', [ItemController::class, 'show'])->name('item.show');
