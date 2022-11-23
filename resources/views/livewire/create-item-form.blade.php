@@ -13,6 +13,7 @@
             @endforeach
           </h5>
           <p class="card-text">Descrizione: {{$description}}</p>
+          <p class="card-text">Prezzo: {{$price}}</p>
           <button href="#" class="btn btn-primary">Go somewhere</button>
         </div>
       </div>    
