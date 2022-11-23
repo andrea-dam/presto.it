@@ -9,9 +9,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
                 @auth
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('item.create')}}">Inserisci un Annuncio</a>

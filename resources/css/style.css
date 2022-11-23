@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 .navbar{
-    position: fixed;
+    /* position: fixed; */
     height: 100px;
     opacity: 0.75;
     z-index: 1;
@@ -32,10 +32,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #homepage-title {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Playball', cursive;
+    /* font-family: 'Kaushan Script', cursive; */
     font-size: 150px;
-    color: var(--second);
-    text-shadow: 5px 3px 8px black;
+    color: var(--fifth);
+    /* text-shadow: 5px 3px 8px black; */
 }
 
 #logo-navbar {
@@ -53,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-uno {
     background-color: var(--second);
+}
+
+.bg-due {
+    background-color: var(--first);
 }
 
 .category-icons {
