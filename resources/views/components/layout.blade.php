@@ -16,8 +16,8 @@
     <x-navbar />
     {{$slot}}
     <x-footer />
-    
     @livewireScripts
+    <script src="https://kit.fontawesome.com/c2171b1e0d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

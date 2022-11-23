@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\PublicController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,6 @@ Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 Route::get('/item/create', [ItemController::class, 'create'])->name('item.create');
 Route::get('/item/index', [ItemController::class, 'index'])->name('item.index');
 Route::get('/item/show/{item}', [ItemController::class, 'show'])->name('item.show');
+
+// Rotte Categorie
+Route::get('/category/{id}', [CategoryController::class, 'index'])->name('category.index');

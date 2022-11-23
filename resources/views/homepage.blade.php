@@ -2,7 +2,7 @@
     <div class="sfondo text-center container-fluid align-items-center d-flex justify-content-center">
         <div class="row">
             <div class="col">
-                <h1 id="" class="">Presto.it</h1>
+                <h1 id="homepage-title" class="">Presto.it</h1>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <a href="{{route('item.show', compact('item'))}}" class="btn btn-primary mb-4">Dettaglio</a>
-
+                        
                     </div>
                 </div> 
             </div>
@@ -31,4 +31,94 @@
             @endif
         </div>
     </main>
+    <section class="container text-center my-5">
+        <h2 class="display-3 mb-5">Tutte le Categorie</h2>
+        <div class="row row-cols-1 row-cols-md-5 justify-content-center">
+            <div class="col">
+                <a href="{{route('category.index', ['id' => 1])}}">
+                    <div class="card border-0 category-icons shadow mb-3">
+                        <i class="fa-solid fa-shirt fa-3x card-img-top p-4"></i>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Abbigliamento</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="{{route('category.index', 2)}}">
+
+                <div class="col">
+                    <div class="card border-0 category-icons">
+                        <i class="fa-solid fa-couch fa-3x card-img-top p-4"></i>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Arredamento</h4>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-laptop fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Elettronica</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-film fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Film</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-dumbbell fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Fitness</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-tree fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Giardinaggio</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-gamepad fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Giochi</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-book-open fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Libri</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-car fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Motori</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 category-icons">
+                    <i class="fa-solid fa-music fa-3x card-img-top p-4"></i>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Musica</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </x-layout>
