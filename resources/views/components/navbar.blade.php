@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+<nav class="navbar shadow navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('homepage')}}">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

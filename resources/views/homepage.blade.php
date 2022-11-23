@@ -1,3 +1,5 @@
 <x-layout>
-    <h1 class="text-white">hello</h1>
+    <div class="sfondo">
+    </div>
+
 </x-layout>
