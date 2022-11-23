@@ -1,12 +1,43 @@
-:root {
-    --liberty: #4357adff;
-    --champagne-pink: #e7cfbcff;
-    --queen-blue: #33658aff;
-    --seashell: #fff4ecff;
-    --tyrian-purple: #5f1a37ff;
+
+/*font-family: 'Kaushan Script', cursive; 
+ font-family: 'Cabin', sans-serif;
+font-family: 'Catamaran', sans-serif;*/
+
+*{
+    font-family: 'Catamaran', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Sfondo */
+.sfondo{
+    background-image:linear-gradient(0deg, rgba(231,207,188,.5) 24%, rgba(95, 26, 55,.5) 81%), url("/public/media/legno.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+   
 }
 
 
-/* body {
-    background-color: black;
-} */
+/* Palette di colori */
+
+:root {
+    --first: #4357adff;
+    --second: #e7cfbcff;
+    --third: #33658aff;
+    --fourth: #fff4ecff;
+    --fifth: #5f1a37ff;
+  }
+
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    height: 100px;
+    opacity: 0.75;
+    z-index: 1;
+    background-color:var(--fifth);
+    width: 100%;
+}
