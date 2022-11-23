@@ -11,6 +11,13 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Cabin', sans-serif;
 }
 
+#title{
+    /* font-family: 'Kaushan Script', cursive;
+    font-weight: 400 !important;  */
+    font-family: 'Cabin', sans-serif;
+
+}
+
 /* Sfondo */
 .sfondo{
     background-image:linear-gradient(0deg, rgba(231,207,188,.5) 24%, rgba(95, 26, 55,.5) 81%), url("/public/media/legno.jpg"); 
@@ -41,3 +48,5 @@ h1,h2,h3,h4,h5,h6{
     background-color:var(--fifth);
     width: 100%;
 }
+
+
