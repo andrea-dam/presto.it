@@ -1,6 +1,7 @@
 <x-layout>
+<x-header>Accedi</x-header>
+
     <main class="container my-5">
-        
         <div class="row justify-content-center">  
             {{-- Se uno o più dati non sono stati inseriti correttamente --}}
             @if ($errors->any())

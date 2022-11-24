@@ -1,4 +1,6 @@
 <x-layout>
+
+    <x-header>Registrati</x-header>
     <main class="container my-5">
         <div class="row justify-content-center">
             

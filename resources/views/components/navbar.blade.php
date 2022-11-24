@@ -28,6 +28,9 @@
                 </li>
                 @else
                 <li class="nav-item">
+                    <a class="nav-link" href="">Benvenuto, {{Auth::user()->name}}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">Logout</a>
                     <form action="{{route('logout')}}" class="d-none" id="logout-form" method="POST">@csrf</form>
                 </li>
