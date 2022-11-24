@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="sfondo text-center container-fluid align-items-center d-flex justify-content-center">
+    <div class="sfondo text-center container-fluid align-items-center d-flex justify-content-center min-vh-100">
         <div class="row">
             <div class="col">
                 <h1 id="homepage-title" class="">Presto.it</h1>
@@ -7,18 +7,18 @@
         </div>
     </div>
     
-    <main class="container text-center mb-5">
-        <h2 class="mb-5 display-3">Gli Ultimi Annunci Inseriti</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+    <main class="container-fluid text-center mb-5">
+        <div class="row bg-due p-4 justify-content-center">
+            <h2 class="col-12 fs-3 fw-bold text-light text-start">Ultimi Articoli</h2>
             @if (count($items) > 0)
             @foreach ($items as $item)
-            <div class="col bg-due border-0 ">
+            <div class="col border-0">
                 <div class="card my-2 text-dark" style="min-height: 450px">
                     <img src="https://picsum.photos/1500/2000" class="card-img-top" alt="...">
                     <div class="card-body w-30px">
                         <h3 class="card-title text-start">{{$item->title}}</h3>
                         <h5 class="card-title text-start">{{$item->category->name}}</h5>
-                        <p class="card-text text-start">{{$item->description}}</p>
+                        <p class="col-8 card-text text-start  text-truncate">{{$item->description}}</p>
                         <p class="card-text fs-3">{{$item->price}}€</p>
                     </div>
                     <div class="d-flex justify-content-center">
