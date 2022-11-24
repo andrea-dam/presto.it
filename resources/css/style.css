@@ -1,6 +1,6 @@
 
 /*font-family: 'Kaushan Script', cursive; 
- font-family: 'Cabin', sans-serif;
+font-family: 'Cabin', sans-serif;
 font-family: 'Catamaran', sans-serif;*/
 /* Palette di colori */
 
@@ -34,9 +34,16 @@ h1, h2, h3, h4, h5, h6 {
 #homepage-title {
     font-family: 'Playball', cursive;
     /* font-family: 'Kaushan Script', cursive; */
-    font-size: 150px;
+    font-size: 96px;
     color: var(--fifth);
     /* text-shadow: 5px 3px 8px black; */
+}
+
+/* Titolo come appare su smartphone */
+@media (max-width: 375px) {
+    #homepage-title {
+        font-size: 10vh;
+    }
 }
 
 #logo-navbar {
@@ -70,13 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
+    
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -90,11 +97,11 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
