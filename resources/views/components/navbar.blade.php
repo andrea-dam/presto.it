@@ -19,6 +19,11 @@
                 </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
+                @if (Auth::user()->is_revisor)
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('login')}}">Area Revisore</a>
+                </li>
+                @endif
                 @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Accedi</a>
