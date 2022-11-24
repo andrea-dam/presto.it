@@ -19,7 +19,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = Item::orderBy('created_at', 'DESC')->get();
+        $items = Item::where('is_accepted', true)->orderBy('created_at', 'DESC')->get();
         $categories = Category::all();
         return view('item.index', compact('items'), compact('categories'));
     }

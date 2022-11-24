@@ -29,6 +29,7 @@ Route::get('/category/{id}', [CategoryController::class, 'index'])->name('catego
 
 // Rotte revisor
 Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
-Route::patch('/accetta/annuncio/{item}', [RevisorController::class, 'acceptItem'])->name('revisor.accept_item');
-Route::patch('/rifiuta/annuncio/{item}', [RevisorController::class, 'rejectItem'])->name('revisor.reject_item');
-
+Route::patch('/accept/item/{item}', [RevisorController::class, 'acceptItem'])->name('revisor.accept_item');
+Route::patch('/reject/item/{item}', [RevisorController::class, 'rejectItem'])->name('revisor.reject_item');
+Route::get('request/revisor', [RevisorController::class, 'becomeRevisor'])->name('become.revisor');
+Route::get('make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor'); 

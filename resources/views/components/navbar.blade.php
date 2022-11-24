@@ -13,17 +13,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('item.create')}}">Inserisci un Annuncio</a>
                 </li>
+                @if (Auth::user()->is_revisor)
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('revisor.index')}}">Area Revisore</a>
+                </li>
+                @endif
                 @endauth
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('item.index')}}">Tutti gli Annunci</a>
                 </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
-                @if (Auth::user()->is_revisor)
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('login')}}">Area Revisore</a>
-                </li>
-                @endif
                 @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Accedi</a>

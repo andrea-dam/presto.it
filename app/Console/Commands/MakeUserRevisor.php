@@ -38,11 +38,11 @@ class MakeUserRevisor extends Command
         
         $user = User::where('email', $this->argument('email'))->first();
         if (!$user){
-        $this->error('utente non trovato');
+        $this->error( 'utente non trovato');
         return;
     }
         $user->is_revisor = true;
         $user->save();
-        $user->info("L'utente {{$user->email}} è ora un revisore");
+        $this->info("L'utente {$user->name} è ora un revisore");
     }
 }
