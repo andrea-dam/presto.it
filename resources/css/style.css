@@ -25,10 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 .navbar{
     /* position: fixed; */
     height: 100px;
-    opacity: 0.75;
+    /* opacity: 0.75; */
     z-index: 1;
     background-color:var(--fifth);
     width: 100%;
+    position: relative;
+    box-shadow: -10px  10px 5px #000000;
 }
 
 #homepage-title {
@@ -98,3 +100,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     object-fit: cover;
   }
+
+  /* Footer */
+footer{
+    background-color: var(--fifth);
+}
+
+#icons{
+    color: var(--third);
+}
