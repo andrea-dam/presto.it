@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Titolo come appare su smartphone */
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     #homepage-title {
         font-size: 10vh;
     }
