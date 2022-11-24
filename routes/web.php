@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RevisorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,9 @@ Route::get('/item/show/{item}', [ItemController::class, 'show'])->name('item.sho
 
 // Rotte Categorie
 Route::get('/category/{id}', [CategoryController::class, 'index'])->name('category.index');
+
+// Rotte revisor
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
+Route::patch('/accetta/annuncio/{item}', [RevisorController::class, 'acceptItem'])->name('revisor.accept_item');
+Route::patch('/rifiuta/annuncio/{item}', [RevisorController::class, 'rejectItem'])->name('revisor.reject_item');
+
