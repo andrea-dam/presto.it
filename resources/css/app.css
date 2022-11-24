@@ -1,3 +1,6 @@
+@import "./fonts/cabin.css";
+@import "./fonts/catamaran.css";
+@import "./fonts/kaushan.css";
+@import "./fonts/playball.css";
 @import "bootstrap";
-@import 'https://fonts.googlealpis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Kaushan+Script&display=swap&family=Playball&display=swap';
 @import "style";
