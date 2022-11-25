@@ -42,7 +42,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary text-light"></i>Company name
+            <i class="fas fa-gem me-3 text-secondary text-light"></i>Presto.it
           </h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -100,7 +100,7 @@
           <!-- Button trigger modal -->
           <i class="fa-solid fa-toolbox"></i>
           <button type="button" class="btn text-light mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Diventa revisore
+            Diventa Revisore
           </button>
           
           <!-- Modal -->
@@ -112,11 +112,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-dark">
-                  verrà inviata una mail all'admin con <strong>i tuoi dati</strong> per verificare la richiesta, confermi?
+                  Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta. Confermi?
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">no</button>
-                  <a href="{{route('become.revisor')}}" class="btn btn-primary">si</a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                  <a href="{{route('become.revisor')}}" class="btn btn-primary">Continua</a>
                 </div>
               </div>
             </div>
