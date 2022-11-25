@@ -34,12 +34,11 @@
             </div>
             <div class="col-6">
                 <h1 class="text-center">categoria</h1>
-                <p class="text-center">{{$item->category->name}}</p>
+                <p class="text-center">{{$item_to_check->category->name}}</p>
                 <h1 class="text-center">descrizione prodotto</h1>
-                <p class="text-center">{{$item->description}}</p>
+                <p class="text-center">{{$item_to_check->description}}</p>
                 <h1 class="text-center">prezzo</h1>
-                <p class="text-center">{{$item->price}} €</p>
-                
+                <p class="text-center">{{$item_to_check->price}} €</p>
             </div>
             <div class="col-6">
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">

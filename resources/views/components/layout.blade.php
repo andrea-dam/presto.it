@@ -10,6 +10,8 @@
 </head>
 <body class="bg-uno">
 
+      
+
     <x-navbar />
     {{$slot}}
     <x-footer />

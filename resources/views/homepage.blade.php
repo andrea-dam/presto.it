@@ -1,4 +1,9 @@
 <x-layout>
+    @if (session('revisor-denied'))
+    <div class="alert m-0 alert-danger">
+        {{ session('revisor-denied') }}
+    </div>
+    @endif
     <div class="sfondo text-center container-fluid align-items-center d-flex justify-content-center min-vh-100">
         <div class="row">
             <div class="col">
@@ -22,7 +27,7 @@
                         <p class="card-text text-light text-start fs-3">{{$item->price}}€</p>
                     </div>
                     <div class="d-flex justify-content-center bg-due">
-                        <a href="{{route('item.show', compact('item'))}}" class="btn border-0 text-white btn-outline mb-4">Scopri di più</a>
+                        <a href="{{route('item.show', compact('item'))}}" class="btn detail-button border-0 text-white  mb-4">Scopri di più</a>
                     </div>
                 </div> 
             </div>
