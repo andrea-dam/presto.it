@@ -81,10 +81,18 @@ h1, h2, h3, h4, h5, h6 {
 .distanza-categorie {
     margin-bottom: 5vh;
 }
+/* iPhone 8 */
+@media (max-width: 375px) { 
+    .distanza-categorie {
+        margin-bottom: 5vh;
+    }
+}
 
+/* iPad */
 @media (max-width: 768px) {
     .distanza-categorie {
         margin-bottom: 4vh;
+        max-width: 60%;
     }
 }
 
