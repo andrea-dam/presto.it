@@ -18,7 +18,7 @@
             @if (count($items) > 0)
             @foreach ($items as $item)
             <div class="col border-0">
-                <div class="card my-2 text-dark" style="min-height: 450px">
+                <div class="card my-2 text-dark item">
                     <img src="https://picsum.photos/1500/2000" class="card-img-top" alt="...">
                     <div class="card-body w-30px">
                         <h3 class="card-title text-start">{{$item->title}}</h3>
