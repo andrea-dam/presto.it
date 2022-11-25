@@ -10,23 +10,23 @@
     
     <!-- Right -->
     <div>
-      <a href="" class="me-4 link-secondary">
-        <i  id="icons" class="fab fa-facebook-f"></i>
+      <a href="" class="me-4 link-secondary text-light">
+        <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i id="icons" class="fab fa-twitter"></i>
+      <a href="" class="me-4 link-secondary text-light">
+        <i class="fab fa-twitter"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i id="icons" class="fab fa-google"></i>
+      <a href="" class="me-4 link-secondary text-light">
+        <i class="fab fa-google"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i id="icons" class="fab fa-instagram"></i>
+      <a href="" class="me-4 link-secondary text-light">
+        <i class="fab fa-instagram"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i id="icons" class="fab fa-linkedin"></i>
+      <a href="" class="me-4 link-secondary text-light">
+        <i class="fab fa-linkedin"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i id="icons" class="fab fa-github"></i>
+      <a href="" class="me-4 link-secondary text-light">
+        <i class="fab fa-github"></i>
       </a>
     </div>
     <!-- Right -->
@@ -42,7 +42,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            <i class="fas fa-gem me-3 text-secondary text-light"></i>Company name
           </h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -98,8 +98,9 @@
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            diventa revisore
+          <i class="fa-solid fa-toolbox"></i>
+          <button type="button" class="btn text-light mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Diventa revisore
           </button>
           
           <!-- Modal -->
@@ -120,11 +121,11 @@
               </div>
             </div>
           </div>
-          <p><i  class="fas fa-envelope me-3 text-secondary"></i>
+          <p><i  class="fas fa-envelope me-3 text-secondary text-light"></i>
             info@example.com
           </p>
-          <p><i  class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-          <p><i  class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          <p><i  class="fas fa-phone me-3 text-secondary text-light"></i> + 01 234 567 88</p>
+          <p><i  class="fas fa-print me-3 text-secondary text-light"></i> + 01 234 567 89</p>
         </div>
         <!-- Grid column -->
       </div>

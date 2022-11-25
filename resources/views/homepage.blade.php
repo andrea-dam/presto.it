@@ -16,144 +16,144 @@
     <section class="container text-center my-5">
         <h2 class="display-3 mb-5">Tutte le Categorie</h2>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 justify-content-center">
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 1])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-shirt fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-shirt fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Abbigliamento</h4>
+                            <h4 class="text-light text-center">Abbigliamento</h4>
                         </div>
                     </a>    
                 </div>
             </div>
             
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 2])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle" style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-couch fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-couch fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Arredamento</h4>
+                            <h4 class="text-light text-center">Arredamento</h4>
                         </div>
                     </a>
                 </div>
             </div>
            
-            <div class="col">
-                <div class="rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class="rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 3])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-laptop fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Elettronica</h4>
+                            <h4 class="text-light text-center">Elettronica</h4>
                         </div>
                     </a>
                 </div>
             </div>
          
-            <div class="col">
-                <div class="col rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 4])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-film fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-film fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Film</h4>
+                            <h4 class="text-light text-center">Film</h4>
                         </div>
                     </a>
                 </div>
             </div>
           
             
-            <div class="col">
-                <div class="col rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 5])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-dumbbell fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-dumbbell fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Fitness</h4>
+                            <h4 class="text-light text-center">Fitness</h4>
                         </div>
                     </a>
                 </div>
             </div>
            
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 6])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-tree fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-tree fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Giardinaggio</h4>
+                            <h4 class="text-light text-center">Giardinaggio</h4>
                         </div>
                     </a>
                 </div>
             </div>
         
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 7])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-gamepad fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-gamepad fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Giochi</h4>
+                            <h4 class="text-light text-center">Giochi</h4>
                         </div>
                     </a>
                 </div>
             </div>
            
             
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 8])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-book-open fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-book-open fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Libri</h4>
+                            <h4 class="text-light text-center">Libri</h4>
                         </div>
                     </a>
                 </div>
             </div>
            
             
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 9])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-car fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-car fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Motori</h4>
+                            <h4 class="text-light text-center">Motori</h4>
                         </div>
                     </a>
                 </div>
             </div>
             
-            <div class="col">
-                <div class=" rounded d-flex justify-content-center bg-due text-center h-100 p-3 pt-0">
+            <div class="col mb-4">
+                <div class=" rounded d-flex justify-content-center bg-due h-100 p-3 pt-0">
                     <a class="text-decoration-none" href="{{route('category.index', ['id' => 10])}}">
                         <span class="fa-stack fa-3x top-0 start-50 translate-middle " style="vertical-align: top;">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
-                            <i class="icon2 size-30px fa-solid fa-music fa-stack-1x fa-inverse"></i>
+                            <i class="icon2 fa-solid fa-music fa-stack-1x fa-inverse"></i>
                         </span>
                         <div>
-                            <h4 class="card-title text-light text-center">Musica</h4>
+                            <h4 class="text-light text-center">Musica</h4>
                         </div>
                     </a>
                 </div>
