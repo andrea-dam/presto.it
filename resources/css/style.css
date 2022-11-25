@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Bottoni */
   .detail-button{
-    background-color: var(--third);
+    /* background-color: var(--third); */
   }
 
   .detail-button:hover{
@@ -171,6 +171,43 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
     */
+
+/* Icone */
+.icon{
+    color: white;
+}
+
+.icon2{
+    color: var(--fifth) !important;
+}
+
+
+.fact-item .fact-icon {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    border-radius: 120px;
+    transition: .5s;
+}
+
+.fact-item:hover .fact-icon {
+    background: var(--fifth);
+}
+
+.fact-item .fact-icon i {
+    color: var(--fifth);
+    transition: .5;
+}
+
+.fact-item:hover .fact-icon i {
+    color: #FFFFFF;
+}
+
 
 /* Anteprima inserisci annuncio*/
 #preview{
