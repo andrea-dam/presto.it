@@ -9,19 +9,19 @@
     
     <main class="container-fluid text-center mb-5">
         <div class="row bg-due p-4 justify-content-center">
-            <h2 class="col-12 fs-3 fw-bold text-light text-start">Ultimi Articoli</h2>
+            <h2 class="col-12 fs-3 text-light text-start">Ultimi Articoli</h2>
             @if (count($items) > 0)
             @foreach ($items as $item)
             <div class="col border-0">
-                <div class="card my-2 text-dark" style="min-height: 450px">
-                    <img src="https://picsum.photos/1500/2000" class="card-img-top" alt="...">
-                    <div class="card-body w-30px">
-                        <h3 class="card-title text-start">{{$item->title}}</h3>
-                        <h5 class="card-title text-start">{{$item->category->name}}</h5>
-                        <p class="col-8 card-text text-start  text-truncate">{{$item->description}}</p>
-                        <p class="card-text fs-3">{{$item->price}}€</p>
+                <div id="card" class="card my-2 text-dark" style="min-height: 450px">
+                    <img src="https://picsum.photos/2000/2000" class="card-img-top" alt="...">
+                    <div class="card-body bg-due">
+                        <h3 class="card-title text-light text-start fs-5">{{$item->title}}</h3>
+                        <h5 class="card-title text-light text-start fs-5">{{$item->category->name}}</h5>
+                        {{-- <p class="col-8 card-text text-start  text-truncate">{{$item->description}}</p> --}}
+                        <p class="card-text text-light text-start fs-3">{{$item->price}}€</p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center bg-due">
                         <a href="{{route('item.show', compact('item'))}}" class="btn border-0 text-white btn-outline mb-4">Scopri di più</a>
                     </div>
                 </div> 

@@ -1,25 +1,27 @@
 <div class="container my-5">
   <div class="row align-items-center">
     <div class="col-6 d-flex flex-column align-items-center">
-      <h2 class="text-center">Il tuo annuncio apparirà così:</h2>
+      <h2 class="text-center">Anteprima</h2>
       <div class="card @error('title','category', 'description') d-none @enderror" style="width: 30rem;">
-        <div class="card-body" >
-          <h3 class="card-title">Titolo: {{$title}}</h3>
-          <h5 class="card-title">Categoria:
+        <div id="preview" class="card-body" >
+          <h3 class="card-title">{{$title}}</h3>
+          <h5 class="card-title">
             @foreach ($categories as $category)
             @if ($category->id == $this->category)
               {{$category->name}}
             @endif
             @endforeach
           </h5>
-          <p class="card-text">Descrizione: {{$description}}</p>
-          <p class="card-text">Prezzo: {{$price}}</p>
-          <button href="#" class="btn btn-primary">Dettaglio</button>
+          <p class="card-text">{{$description}}</p>
+          <p class="card-text">{{$price}}</p>
+          <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <button href="#" class="btn btn-primary border-0">Dettaglio</button>
+          </div>
         </div>
       </div>    
     </div>
     <div class="col-6">
-      <form wire:submit.prevent="store">
+      <form wire:submit.prevent="store" id="shadow">
         @if(session()->has('itemCreated'))
         <div class="alert alert-success p-2">
           {{session('itemCreated')}}
@@ -53,7 +55,7 @@
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="price" wire:model.lazy="price">
             @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
           </div>
-        <button type="submit" class="btn btn-primary">Pubblica Annuncio</button>
+        <button type="submit" class="btn btn-primary border-0">Pubblica Annuncio</button>
       </form>
     </div>
   </div>
