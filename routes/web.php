@@ -32,4 +32,7 @@ Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.
 Route::patch('/accept/item/{item}', [RevisorController::class, 'acceptItem'])->name('revisor.accept_item');
 Route::patch('/reject/item/{item}', [RevisorController::class, 'rejectItem'])->name('revisor.reject_item');
 Route::get('request/revisor', [RevisorController::class, 'becomeRevisor'])->name('become.revisor');
-Route::get('make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor'); 
+Route::get('make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
+
+// Rotte ricerca
+Route::get('/ricerca/annuncio', [PublicController::class, 'searchItems'])->name('items.search');
