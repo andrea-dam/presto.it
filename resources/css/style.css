@@ -122,35 +122,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* cards */
-/* .item{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: var(--bs-card-img-overlay-padding);
-    border-radius: var(--bs-card-inner-border-radius);
-}
-
-.item p, h5, h3{
-    margin: 0!important;
-}
-
-.item-info{
-    background-color: rgba(0, 0, 0, 0.453)!important;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    height: 100px!important;
-    width: 100%!important;
-    /* margin-top: auto!important; 
-} */
-
-
 
 /* Bottoni */
-.detail-button{
-    /* background-color: var(--third); */
-}
 
 .detail-button:hover{
     animation-timing-function: ease-in-out;
@@ -160,6 +133,9 @@ h1, h2, h3, h4, h5, h6 {
     transition-duration: 1s;
 } 
 
+#btn-search:hover{
+    color: var(--fifth);
+}
 
 
 
@@ -227,6 +203,14 @@ h1, h2, h3, h4, h5, h6 {
 #shadow{
     box-shadow: #000000;
 }
+
+/* Login */
+.form-user{
+    background-color: var(--fifth);
+    box-shadow: 15px 15px 5px 10px rgb(159, 132, 132);
+    color: var(--fourth);
+}
+
 
 /* Footer */
 footer{
