@@ -12,6 +12,140 @@
         </div>
     </div>
     
+{{-- Sezione Categorie --}}
+    <section class="container text-center my-5">
+        <h2 class="display-3 mb-5">Tutte le Categorie</h2>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 justify-content-center">
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100  pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 1])}}">
+                    <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                        <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="icon2 size-30px fa-solid fa-shirt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                        <h4 class="card-title text-light text-center">Abbigliamento</h4>
+                    </div>
+                </a>    
+            </div>
+                
+        
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 2])}}">
+                    <span class="fa-stack fa-4x top-0 start-50 translate-middle" style="vertical-align: top;">
+                        <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="icon2 size-30px fa-solid fa-couch fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                        <h4 class="card-title text-light text-center">Arredamento</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 3])}}">
+                    <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                        <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="icon2 size-30px fa-laptop fa-shirt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                        <h4 class="card-title text-light text-center">Elettronica</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 4])}}">
+                        <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                            <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="icon2 size-30px fa-film fa-shirt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <div>
+                            <h4 class="card-title text-light text-center">Film</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 5])}}">
+                        <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                            <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="icon2 size-30px fa-dumbell fa-shirt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <div>
+                            <h4 class="card-title text-light text-center">Fitness</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 6])}}">
+                        <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                            <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="icon2 size-30px fa-tree fa-shirt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <div>
+                            <h4 class="card-title text-light text-center">Giardinaggio</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 7])}}">
+                        <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                            <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="icon2 size-30px fa-gamepad fa-shirt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <div>
+                            <h4 class="card-title text-light text-center">Giochi</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 8])}}">
+                    <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                        <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="icon2 size-30px fa-book-open fa-shirt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                        <h4 class="card-title text-light text-center">Libri</h4>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 9])}}">
+                    <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                        <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="icon2 size-30px fa-car fa-shirt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                        <h4 class="card-title text-light text-center">Motori</h4>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="rounded d-flex justify-content-center bg-due col me-3 ms-1 text-center h-100 p-3 pt-0">
+                <a class="text-decoration-none" href="{{route('category.index', ['id' => 10])}}">
+                    <span class="fa-stack fa-4x top-0 start-50 translate-middle " style="vertical-align: top;">
+                        <i class="icon fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="icon2 size-30px fa-music fa-shirt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                        <h4 class="card-title text-light text-center">Musica</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+{{-- Sezione annunci --}}
     <main class="container-fluid text-center mb-5">
         <div class="row bg-due p-4 justify-content-center">
             <h2 class="col-12 fs-3 text-light text-start">Ultimi Articoli</h2>
@@ -34,110 +168,5 @@
             @endforeach
             @endif
         </div>
-    </main>
-    <section class="container text-center my-5">
-        <h2 class="display-3 mb-5">Tutte le Categorie</h2>
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 justify-content-center">
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 1])}}">
-                    <div class="card border-0 category-icons shadow">
-                        <i class="fa-solid fa-shirt fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Abbigliamento</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 2])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-couch fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Arredamento</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 3])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-laptop fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Elettronica</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 4])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-film fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Film</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 5])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-dumbbell fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Fitness</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 6])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-tree fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Giardinaggio</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 7])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-gamepad fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Giochi</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 8])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-book-open fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Libri</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 9])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-car fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Motori</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col mb-3">
-                <a class="text-decoration-none" href="{{route('category.index', ['id' => 10])}}">
-                    <div class="card border-0 category-icons">
-                        <i class="fa-solid fa-music fa-3x card-img-top p-4"></i>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">Musica</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+    </main>   
 </x-layout>
