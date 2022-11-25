@@ -5,7 +5,7 @@
     </div>
     @endif
     <div class="sfondo text-center container-fluid align-items-center d-flex justify-content-center min-vh-100">
-        <div class="row">
+        <div class="row animate__animated animate__fadeInRight">
             <div class="col">
                 <h1 id="homepage-title" class="">Presto.it</h1>
                 {{-- <h2>Il tuo portale di annunci</h2> --}}
