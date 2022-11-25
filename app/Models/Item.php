@@ -23,10 +23,9 @@ class Item extends Model
     public function toSearchableArray() {
         $category = $this->category;
         $array = [
-            'id' => $this->id,
             'title' => $this->title,
             'description' => $this->description,
-            'category' => $this->category_id,
+            'category' => $category,
         ];
 
         return $array;
