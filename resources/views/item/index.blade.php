@@ -4,7 +4,7 @@
     
     <main class="container my-5">
         <div class="row justify-content-center">
-            @foreach ($items as $item)
+            @forelse ($items as $item)
             <div class="col-12 col-md-12 col-lg-3 border-0">
                 {{-- <div class=" my-2 text-dark item p-0"> --}}
                     {{-- <img src="https://picsum.photos/3000/3500" class="m-0 img-fluid w-100" alt="...">
@@ -36,7 +36,13 @@
                     </div>
                     {{-- </div>  --}}
                 </div>
-                @endforeach
+                @empty
+                <div class="col-12">
+                    <div class="alert alert-warning">
+                        <p>Non ci sono Annunci.</p>
+                    </div>
+                </div>
+                @endforelse
             </div>
         </main>
         
