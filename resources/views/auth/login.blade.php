@@ -5,7 +5,7 @@
         <div class="row justify-content-center">  
             {{-- Se uno o più dati non sono stati inseriti correttamente --}}
             @if ($errors->any())
-            <div class="col-12 col-md-8 alert alert-danger">
+            <div  class="col-12 col-md-8 alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
                     <li>{{$error}}</li>
@@ -20,7 +20,7 @@
                     {{session('login')}}
                 </div>
                 @endif  
-                <form method="POST" action="{{route('login')}}">
+                <form class="form-user p-5 rounded" method="POST" action="{{route('login')}}">
                     @csrf
                     <div class="mb-4">
                         <label for="email" class="form-label">Indirizzo Email</label>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="mb-4 form-check">
                         <label for="remember" class="form-check-label">Ricordami</label>
-                        <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                        <input id="detail-button" type="checkbox" class="form-check-input" id="remember" name="remember">
                     </div>
                     <div class="d-flex justify-content-between mt-4">
                         <button type="submit" class="btn btn-success p-3 me-3">Accedi</button>
