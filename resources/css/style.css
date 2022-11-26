@@ -5,9 +5,9 @@ font-family: 'Catamaran', sans-serif;*/
 /* Palette di colori */
 
 :root {
-    --first: rgb(196, 92, 145);
+    --first: rgb(144, 123, 104);
     --second: #e7cfbcff;
-    --third: rgb(175, 84, 134);
+    --third: #BF9D36;
     --fourth: #fff4ecff;
     --fifth: #5f1a37ff;
 }
@@ -19,6 +19,10 @@ font-family: 'Catamaran', sans-serif;*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cabin', sans-serif;
     /* color: var(--fifth); */
+}
+
+::selection {
+    background-color: rgba(255, 244, 236, 0.674);
 }
 
 /* Navbar */
@@ -225,23 +229,40 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration:none;
     font-family:"arial";
     font-weight:300;
-    color:#FDFDFD;
+    color:var(--fourth);
     border-radius:3em;
     text-align:center;
     transition: 0.1s;
-    background:rgba(255, 7, 119, 0.648);
+    background: var(--third);
     cursor:pointer;
     font-weight:bold;
     letter-spacing: 0.05em;
-  }
-  .btn-register-login:hover{
-    background:rgba(255, 7, 119, 0.79);
-  }
-  .btn-register-login:active, .btn-register-login:focus{
-    background:rgb(255, 7, 119);
-  }
-
-
+}
+.btn-home {
+    display:inline-block;
+    padding:0.6em 1em;
+    /* border:none; */
+    margin:0.2em 0.1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:"arial";
+    font-weight:300;
+    color:var(--fourth);
+    border-radius:3em;
+    text-align:center;
+    transition: 0.1s;
+    background: var(--first);
+    cursor:pointer;
+    font-weight:bold;
+    letter-spacing: 0.05em;
+    /* border: 2px solid var(--third); */
+}
+.btn-register-login:hover, .btn-register-login:active, .btn-register-login:focus{
+    background:#d8b448;
+}
+.btn-home:hover, .btn-home:active, .btn-home:focus{
+    background:rgb(105, 80, 55);
+}
 
 
 /* @keyframes myAnim {

@@ -36,10 +36,10 @@
                         <div class="card text-bg-dark item p-0">
                             <img src="https://picsum.photos/2000/2500" class="card-img" alt="...">
                             {{-- <div class="sfondo-sfocato"></div> --}}
-                            <div class="testo-card text-center fw-bold p-0">
+                            <div class="testo-card text-center fw-bold p-3">
                               <h5 class="card-title">{{$item->title}}</h5>
                               <h6 class="card-text fs-2">{{$item->price}}€</h6>
-                              <p class="card-text"><small>{{$item->created_at}}</small></p>
+                              {{-- <p class="card-text"><small>{{$item->created_at}}</small></p> --}}
                             </div>
                           </div>
                     </a>
