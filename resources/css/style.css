@@ -117,6 +117,31 @@ h1, h2, h3, h4, h5, h6 {
     animation: backToNormal 0.25s linear 0s 1 normal forwards;
     z-index: 0;
 }
+
+.testo-card{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    background-color: rgba(88, 14, 43, 0.591);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.sfondo-sfocato{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    background-color: rgba(93, 6, 41, 0.7); /* Black w/opacity/see-through */
+    height: 100px;
+    width: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
 @keyframes ingrandimento {
     0% {transform: scale(1);
     }

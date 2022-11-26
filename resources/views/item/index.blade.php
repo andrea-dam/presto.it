@@ -5,7 +5,7 @@
     <main class="container my-5">
         <div class="row justify-content-center">
             @forelse ($items as $item)
-            <div class="col-12 col-md-12 col-lg-3">
+            <div class="col-12 col-md-12 col-lg-3 mt-4">
                 {{-- <div class=" my-2 text-dark item p-0"> --}}
                     {{-- <img src="https://picsum.photos/3000/3500" class="m-0 img-fluid w-100" alt="...">
                     <div class="item-info">
@@ -24,7 +24,7 @@
                         <a href="{{route('item.show', compact('item'))}}" class="btn detail-button border-0 text-white  mb-4">Scopri di più</a>
                     </div> --}}
                     <a href="{{route('item.show', compact('item'))}}" class="text-white text-decoration-none mb-4">
-                        <div class="card sfondo-categorie my-2 border-0 shadow rounded text-center item">
+                        {{-- <div class="card sfondo-categorie my-2 border-0 shadow rounded text-center item">
                             <img src="https://picsum.photos/2000/1500" class="card-img" alt="...">
                             <div class="card-body">
                                 <div class="p-3">
@@ -33,11 +33,12 @@
                                 </div>
                             </div>
                         </div> --}}
-                        <div class="card text-bg-dark">
-                            <img src="https://picsum.photos/2000/1500" class="card-img" alt="...">
-                            <div class="card-img-overlay">
+                        <div class="card text-bg-dark item p-0">
+                            <img src="https://picsum.photos/2000/2500" class="card-img" alt="...">
+                            {{-- <div class="sfondo-sfocato"></div> --}}
+                            <div class="testo-card text-center fw-bold p-0">
                               <h5 class="card-title">{{$item->title}}</h5>
-                              <p class="card-text">{{$item->price}}€</p>
+                              <h6 class="card-text fs-2">{{$item->price}}€</h6>
                               <p class="card-text"><small>{{$item->created_at}}</small></p>
                             </div>
                           </div>
