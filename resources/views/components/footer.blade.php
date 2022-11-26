@@ -112,7 +112,7 @@
                   <button type="button" class="bg-light btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-light">
-                  Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta. Confermi?
+                  Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn-register-login btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
