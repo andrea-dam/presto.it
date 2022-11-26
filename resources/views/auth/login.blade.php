@@ -1,5 +1,4 @@
 <x-layout>
-<x-header>Accedi</x-header>
 
     <main class="container my-5">
         <div class="row justify-content-center">  
@@ -22,7 +21,8 @@
                 @endif  
                 <form class="form-user p-5 rounded" method="POST" action="{{route('login')}}">
                     @csrf
-                    <div class="mb-4">
+                    <h2>Accedi:</h2>
+                    <div class="mb-4 mt-4">
                         <label for="email" class="form-label">Indirizzo Email</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>

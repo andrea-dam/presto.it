@@ -1,5 +1,5 @@
 <x-layout>
-  <x-header>{{$item->title}}</x-header>
+  <x-header></x-header>
   <div class="container">
     <div class="row justify-content-center mb-3">
       <div class="col-6">
@@ -38,13 +38,9 @@
         </div>
       </div>
       <div class="col-6">
-        <h1 class="text-center">categoria</h1>
-        <p class="text-center">{{$item->category->name}}</p>
-        <h1 class="text-center">descrizione prodotto</h1>
-        <p class="text-center">{{$item->description}}</p>
-        <h1 class="text-center">prezzo</h1>
-        <p class="text-center">{{$item->price}} €</p>
-        
+        <h2 class=" text-start">{{$item->title}} ({{$item->category->name}})</h2>
+        <h2 class="text-start">{{$item->price}} €</h2>
+        <h5 class="text-start">{{$item->description}}</h5>
       </div>
       <div class="col-6">
         <a class="btn btn-dark mt-3 w-100 p-3" href="{{route('item.index')}}">Tutti gli annunci</a>

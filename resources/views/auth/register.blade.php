@@ -1,6 +1,5 @@
 <x-layout>
 
-    <x-header>Registrati</x-header>
     <main class="container my-5">
         <div class="row justify-content-center">
             
@@ -18,7 +17,10 @@
             <div class="col-12 col-md-5">
                 <form class="form-user p-5 rounded" method="POST" action="{{route('register')}}">
                     @csrf
-                    <div class="mb-4">
+                    <div>
+                        <h2>Registrati:</h2>
+                    </div>
+                    <div class="mb-4 mt-4">
                         <label for="name" class="form-label">Nome Utente</label>
                         <input type="text" class="form-control" id="name" name="name">
                     </div>

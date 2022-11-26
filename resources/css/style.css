@@ -7,7 +7,7 @@ font-family: 'Catamaran', sans-serif;*/
 :root {
     --first: rgb(196, 92, 145);
     --second: #e7cfbcff;
-    --third: rgb(166, 93, 188);
+    --third: rgb(175, 84, 134);
     --fourth: #fff4ecff;
     --fifth: #5f1a37ff;
 }
@@ -214,32 +214,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.fact-item .fact-icon {
-    width: 120px;
-    height: 120px;
-    margin-top: -60px;
-    margin-bottom: 1.5rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background:white;
-    border-radius: 120px;
-    transition: .5s;
-}
-
-.fact-item:hover .fact-icon {
-    background: var(--fifth);
-}
-
-.fact-item .fact-icon i {
-    color: var(--fifth);
-    transition: .5;
-}
-
-.fact-item:hover .fact-icon i {
-    color: #FFFFFF;
-}
-
 
 /* Anteprima inserisci annuncio*/
 #preview{
@@ -258,6 +232,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--fourth);
 }
 
+
+.modal-revisor{
+    color: var(--second);
+    background-color: var(--fifth);
+}
 
 /* Footer */
 footer{

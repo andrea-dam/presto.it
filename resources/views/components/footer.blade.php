@@ -106,17 +106,17 @@
           <!-- Modal -->
           <div class=" modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class=" modal-dialog">
-              <div class="form-user modal-content">
+              <div class="modal-revisor modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5 text-dark" id="staticBackdropLabel">Avviso</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="modal-title fs-5 text-light" id="staticBackdropLabel">Avviso</h1>
+                  <button type="button" class="bg-light btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-dark">
+                <div class="modal-body text-light">
                   Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta. Confermi?
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                  <a href="{{route('become.revisor')}}" class="btn btn-primary">Continua</a>
+                  <button type="button" class="btn-register-login btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                  <a href="{{route('become.revisor')}}" class="btn-register-login btn btn-primary">Continua</a>
                 </div>
               </div>
             </div>

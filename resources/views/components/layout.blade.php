@@ -13,7 +13,9 @@
       
 
     <x-navbar />
-    {{$slot}}
+    <div class="min-vh-100">
+        {{$slot}}
+    </div>
     <x-footer />
     @livewireScripts
     <script src="https://kit.fontawesome.com/c2171b1e0d.js" crossorigin="anonymous"></script>
