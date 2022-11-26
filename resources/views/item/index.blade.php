@@ -23,13 +23,13 @@
                     {{-- <div class="d-flex justify-content-center">
                         <a href="{{route('item.show', compact('item'))}}" class="btn detail-button border-0 text-white  mb-4">Scopri di più</a>
                     </div> --}}
-                    <a href="{{route('item.show', compact('item'))}}" class="btn detail-button text-white  mb-4">
-                        {{-- <div class="card sfondo-categorie my-2 border border-0 shadow">
+                    <a href="{{route('item.show', compact('item'))}}" class="text-white text-decoration-none mb-4">
+                        <div class="card sfondo-categorie my-2 border-0 shadow rounded text-center item">
                             <img src="https://picsum.photos/2000/1500" class="card-img" alt="...">
-                            <div class="rounded">
+                            <div class="card-body">
                                 <div class="p-3">
-                                    <h5 class="card-title text-center">{{$item->title}}</h5>
-                                    <h3>{{$item->price}}€</h3>
+                                <h5 class="card-title text-center">{{$item->title}}</h5>
+                                    <h3 class="card-text">{{$item->price}}€</h3>
                                 </div>
                             </div>
                         </div> --}}
