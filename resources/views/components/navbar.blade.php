@@ -15,7 +15,9 @@
                 </li>
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('revisor.index')}}">Area Revisore</a>
+                    <a class="nav-link" href="{{route('revisor.index')}}">Area Revisore
+                        <span class="badge p-1 position-absolute translate-middle bg-secondary rounded-circle">3</span>
+                    </a>
                 </li>
                 @endif
                 @endauth
