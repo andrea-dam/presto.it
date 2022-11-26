@@ -113,8 +113,8 @@
                   Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta.
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn-register-login btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                  <a href="{{route('become.revisor')}}" class="btn-register-login btn btn-primary">Continua</a>
+                  <a href="{{route('become.revisor')}}" class="text-white me-2 btn-register-login btn shadow">Continua</a>
+                  <button type="button" class="text-white btn-home btn shadow" data-bs-dismiss="modal">Annulla</button>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
   
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-    © 2021 Copyright:
+    © 2022 Copyright:
     <a class="text-reset " href="#">$this->Bladers[ ]</a>
   </div>
   <!-- Copyright -->

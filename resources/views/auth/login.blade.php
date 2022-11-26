@@ -38,7 +38,7 @@
                         <a href="{{route('register')}}" class="text-decoration-none text-light">Non hai un account? Registrati</a>
                     </div>
                     <div class="d-flex justify-content-between mt-4">
-                        <button type="submit" class="btn-register-login btn btn-success p-3 me-3 shadow">Accedi</button>
+                        <button type="submit" class="btn-register-login btn p-3 me-3 shadow">Accedi</button>
                         <div class="d-flex">
                             {{-- <a href="{{route('register')}}" role="button" class="btn-register-login btn btn-secondary p-3 shadow">Non hai un account? Registrati</a> --}}
                             <a href="{{route('homepage')}}" role="button" class="btn-home btn p-3 shadow">Torna alla Home</a>

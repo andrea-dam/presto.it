@@ -4,7 +4,7 @@
       <h2 class="text-center">Anteprima</h2>
       {{-- <div class="card @error('title','category', 'description') d-none @enderror" style="width: 30rem;"> --}}
 
-        @if(!$price && session('price'))
+        @if(!$price || session('price'))
         <x-card 
                 title="{{$title}}"
                 price="{{$price}}"
@@ -48,17 +48,18 @@
           @error('description')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="mb-3">
-            <label for="price" class="form-label">Prezzo *</label>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" value="{{$price}}€" wire:model="price">
-                <span class="input-group-text">€</span>
-              </div>
-            </div>
+          <label for="price" class="form-label">Prezzo *</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" value="{{$price}}€" wire:model="price">
+            <span class="input-group-text">€</span>
             @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
           </div>
-        <button type="submit" class="btn btn-primary border-0">Pubblica Annuncio</button>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="btn-register-login text-white btn p-3 shadow">Pubblica Annuncio</button>
+          <a href="{{route('homepage')}}" class="btn-home text-white btn p-3 shadow">Torna alla Home</a>
+        </div>
       </form>
     </div>
   </div>
-  
 </div>
