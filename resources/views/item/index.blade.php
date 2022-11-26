@@ -24,7 +24,7 @@
                         <a href="{{route('item.show', compact('item'))}}" class="btn detail-button border-0 text-white  mb-4">Scopri di più</a>
                     </div> --}}
                     <a href="{{route('item.show', compact('item'))}}" class="btn detail-button text-white  mb-4">
-                        <div class="card sfondo-categorie my-2 border border-0 shadow">
+                        {{-- <div class="card sfondo-categorie my-2 border border-0 shadow">
                             <img src="https://picsum.photos/2000/1500" class="card-img" alt="...">
                             <div class="rounded">
                                 <div class="p-3">
@@ -32,7 +32,15 @@
                                     <h3>{{$item->price}}€</h3>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
+                        <div class="card text-bg-dark">
+                            <img src="https://picsum.photos/2000/1500" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">{{$item->title}}</h5>
+                              <p class="card-text">{{$item->price}}€</p>
+                              <p class="card-text"><small>{{$item->created_at}}</small></p>
+                            </div>
+                          </div>
                     </a>
                     {{-- </div>  --}}
                 </div>
