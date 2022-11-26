@@ -177,7 +177,7 @@
         </div>
     </main>   
 
-    <span><a href="#" role="button" class="btn-register-login btn"  style='position: fixed; bottom:20px;right:20px;'>
-        <i class="fa-sharp fa-solid fa-arrow-up"></i>
-    </a></span>
+    <a href="#" role="button" class="btn-register-login btn" style='position: fixed; bottom:20px;right:20px; z-index: 3;'>
+        <i class="fa-sharp fa-solid fa-arrow-up fa-2x"></i>
+    </a>
 </x-layout>

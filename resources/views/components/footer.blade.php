@@ -10,23 +10,23 @@
     
     <!-- Right -->
     <div>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-facebook-f"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-twitter"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-twitter"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-google"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-google"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-instagram"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-linkedin"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-linkedin"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-github"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-github"></i>
       </a>
     </div>
     <!-- Right -->
@@ -41,9 +41,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary text-light"></i>Presto.it
-          </h6>
+          <h6 id="logo-navbar" class="mb-4 logo-navbar">Presto.it</h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
             dolor sit amet, consectetur adipisicing elit.

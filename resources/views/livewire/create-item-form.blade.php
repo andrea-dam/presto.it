@@ -1,4 +1,4 @@
-<div class="container my-5">
+<div class="container mb-5">
   <div class="row align-items-center">
     <div class="p-5 col-6 d-flex flex-column align-items-center">
       <h2 class="text-center">Anteprima</h2>
