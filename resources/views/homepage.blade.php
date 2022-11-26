@@ -17,9 +17,9 @@
     <section class="container text-center my-5">
         <h2 id="tutte-le-categorie" class="">Tutte le Categorie</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 1])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <div class="fa-stack fa-3x position-absolute top-0 start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-shirt fa-stack-1x fa-inverse"></i>
@@ -31,9 +31,9 @@
                 </a>  
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 2])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x position-absolute top-0 start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-couch fa-stack-1x fa-inverse"></i>
@@ -45,9 +45,9 @@
                 </a>
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 3])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x top-0 position-absolute start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-laptop fa-stack-1x fa-inverse"></i>
@@ -59,9 +59,9 @@
                 </a>
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 4])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x top-0 position-absolute start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-film fa-stack-1x fa-inverse"></i>
@@ -74,9 +74,9 @@
             </div>
             
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 5])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x top-0 position-absolute start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-dumbbell fa-stack-1x fa-inverse"></i>
@@ -88,9 +88,9 @@
                 </a>
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 6])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x top-0 position-absolute start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-tree fa-stack-1x fa-inverse"></i>
@@ -102,9 +102,9 @@
                 </a>
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 7])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x position-absolute top-0 start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-gamepad fa-stack-1x fa-inverse"></i>
@@ -116,9 +116,9 @@
                 </a>
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 8])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x position-absolute top-0 start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-book-open fa-stack-1x fa-inverse"></i>
@@ -130,10 +130,9 @@
                 </a>
             </div>
             
-            
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 9])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x position-absolute top-0 start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-car fa-stack-1x fa-inverse"></i>
@@ -145,9 +144,9 @@
                 </a>
             </div>
             
-            <div class="col distanza-categorie">
+            <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 10])}}">
-                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around">
+                    <div class="rounded sfondo-categorie p-3 pt-0 position-relative h-100 d-flex flex-column justify-content-around shadow">
                         <span class="fa-stack fa-3x position-absolute top-0 start-50 translate-middle">
                             <i class="icon fa-solid fa-circle fa-stack-2x"></i>
                             <i class="icon2 fa-solid fa-music fa-stack-1x fa-inverse"></i>
@@ -175,4 +174,8 @@
             @endforeach
         </div>
     </main>   
+
+    <span><a href="#" role="button" class="btn-register-login btn"  style='position: fixed; bottom:20px;right:20px;'>
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a></span>
 </x-layout>

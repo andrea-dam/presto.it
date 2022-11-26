@@ -1,8 +1,10 @@
 <x-layout>
     
-    <x-header>{{$item_to_check ? 'Annuncio da Revisionare' : 'Nessun annuncio da revisionare'}}</x-header>
+    <x-header>{{$item_to_check ? 'Annuncio da Revisionare' : 'Nessun annuncio da revisionare'}}
+        <i class="fa-regular fa-face-frown"></i>
+    </x-header>
     @if ($item_to_check)
-    <div class="container">
+    <div class="container ">
         <div class="row justify-content-center mb-3">
             <div class="col-6">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">

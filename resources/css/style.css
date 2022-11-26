@@ -5,9 +5,9 @@ font-family: 'Catamaran', sans-serif;*/
 /* Palette di colori */
 
 :root {
-    --first: rgb(196, 92, 145);
+    --first: rgb(144, 123, 104);
     --second: #e7cfbcff;
-    --third: rgb(166, 93, 188);
+    --third: #BF9D36;
     --fourth: #fff4ecff;
     --fifth: #5f1a37ff;
 }
@@ -19,6 +19,10 @@ font-family: 'Catamaran', sans-serif;*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cabin', sans-serif;
     /* color: var(--fifth); */
+}
+
+::selection {
+    background-color: rgba(255, 244, 236, 0.674);
 }
 
 /* Navbar */
@@ -109,15 +113,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
 }
 
-.item:hover {
-    animation: ingrandimento 0.25s linear 0s 1 normal forwards;
-    z-index: 1;
-}
-.item {
-    animation: backToNormal 0.25s linear 0s 1 normal forwards;
-    z-index: 0;
-}
-
 .testo-card{
     position: absolute;
     right: 0;
@@ -129,6 +124,37 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(4px);
 }
 
+
+.anim-cat:hover {
+    animation: up 0.10s linear 0s 1 normal forwards;
+}
+.anim-cat {
+    animation: down 0.10s linear 0s 1 normal forwards;
+}
+
+@keyframes up {
+    0% { translate: 0 0;
+    }
+    100% {
+        translate: 0 -15px;
+    }
+}
+@keyframes down {
+    0% { translate: 0 -15px;
+    }
+    100% {
+        translate: 0 0;
+    }
+}
+
+.item:hover {
+    animation: ingrandimento 0.25s linear 0s 1 normal forwards;
+    z-index: 1;
+}
+.item {
+    animation: backToNormal 0.25s linear 0s 1 normal forwards;
+    z-index: 0;
+}
 
 @keyframes ingrandimento {
     0% {transform: scale(1);
@@ -150,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
 }
 
-#card{
+#card {
     border: none;
 }
 
@@ -188,10 +214,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-
-
 /* Bottoni */
-
 .detail-button:hover{
     animation-timing-function: ease-in-out;
     /* color: black !importanlt; */
@@ -218,22 +241,40 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration:none;
     font-family:"arial";
     font-weight:300;
-    color:#FDFDFD;
+    color:var(--fourth);
     border-radius:3em;
     text-align:center;
     transition: 0.1s;
-    background:rgba(255, 7, 119, 0.648);
+    background: var(--third);
     cursor:pointer;
     font-weight:bold;
     letter-spacing: 0.05em;
-  }
-  .btn-register-login:hover{
-    background:rgba(255, 7, 119, 0.79);
-  }
-  .btn-register-login:active, .btn-register-login:focus{
-    background:rgb(255, 7, 119);
-  }
-
+}
+.btn-home {
+    display:inline-block;
+    padding:0.6em 1em;
+    /* border:none; */
+    margin:0.2em 0.1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:"arial";
+    font-weight:300;
+    color:var(--fourth);
+    border-radius:3em;
+    text-align:center;
+    transition: 0.1s;
+    background: var(--first);
+    cursor:pointer;
+    font-weight:bold;
+    letter-spacing: 0.05em;
+    /* border: 2px solid var(--third); */
+}
+.btn-register-login:hover, .btn-register-login:active, .btn-register-login:focus{
+    background:#d8b448;
+}
+.btn-home:hover, .btn-home:active, .btn-home:focus{
+    background:rgb(105, 80, 55);
+}
 
 
 /* @keyframes myAnim {
@@ -284,6 +325,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--fourth);
 }
 
+
+.modal-revisor{
+    color: var(--second);
+    background-color: var(--fifth);
+}
 
 /* Footer */
 footer{
