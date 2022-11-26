@@ -1,24 +1,21 @@
 <div class="container my-5">
   <div class="row align-items-center">
-    <div class="col-6 d-flex flex-column align-items-center">
+    <div class="p-5 col-6 d-flex flex-column align-items-center">
       <h2 class="text-center">Anteprima</h2>
-      <div class="card @error('title','category', 'description') d-none @enderror" style="width: 30rem;">
-        <div id="preview" class="card-body" >
-          <h3 class="card-title">{{$title}}</h3>
-          <h5 class="card-title">
-            @foreach ($categories as $category)
-            @if ($category->id == $this->category)
-              {{$category->name}}
-            @endif
-            @endforeach
-          </h5>
-          <p class="card-text">{{$description}}</p>
-          <p class="card-text">{{$price}}</p>
-          <div class="position-absolute bottom-0 start-50 translate-middle-x">
-            <button href="#" class="btn btn-primary border-0">Dettaglio</button>
-          </div>
-        </div>
-      </div>    
+      {{-- <div class="card @error('title','category', 'description') d-none @enderror" style="width: 30rem;"> --}}
+
+        @if(!$price && session('price'))
+        <x-card 
+                title="{{$title}}"
+                price="{{$price}}"
+                />
+        @else
+        <x-card 
+                title="{{$title}}"
+                price="{{$price}}€"
+                />
+        @endif
+      
     </div>
     <div class="col-6">
       <form wire:submit.prevent="store" id="shadow">
@@ -52,7 +49,11 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prezzo *</label>
-            <input type="text" class="form-control @error('title') is-invalid @enderror" id="price" wire:model.lazy="price">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" value="{{$price}}€" wire:model="price">
+                <span class="input-group-text">€</span>
+              </div>
+            </div>
             @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
           </div>
         <button type="submit" class="btn btn-primary border-0">Pubblica Annuncio</button>

@@ -166,19 +166,11 @@
         <div class="row bg-due p-4 justify-content-center">
             <h2 class="col-12 fs-5 text-light text-start">Ultimi Articoli</h2>
             @forelse ($items as $item)
-            <div class="col border-0">
-                <div id="card" class="card my-2 text-dark" style="min-height: 450px">
-                    <img src="https://picsum.photos/2000/2000" class="card-img-top" alt="...">
-                    <div class="card-body bg-due">
-                        <h3 class="card-title text-light text-start fs-5">{{$item->title}}</h3>
-                        <h5 class="card-title text-light text-start fs-5">{{$item->category->name}}</h5>
-                        {{-- <p class="col-8 card-text text-start  text-truncate">{{$item->description}}</p> --}}
-                        <p class="card-text text-light text-start fs-3">{{$item->price}}€</p>
-                    </div>
-                    <div class="d-flex justify-content-center bg-due">
-                        <a href="{{route('item.show', compact('item'))}}" class="btn detail-button border-0 text-white  mb-4">Scopri di più</a>
-                    </div>
-                </div> 
+            <div class="col-12 item col-md-12 col-lg-3 border-0 my-4">
+                <x-card 
+                title="{{$item->title}}"
+                price="{{$item->price}}€"
+                />
             </div>
             @endforeach
         </div>
