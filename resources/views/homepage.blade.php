@@ -166,10 +166,12 @@
             <h2 class="col-12 fs-5 text-light text-start">Ultimi Articoli</h2>
             @forelse ($items as $item)
             <div class="col-12 item col-md-12 col-lg-3 border-0 my-4">
-                <x-card 
-                title="{{$item->title}}"
-                price="{{$item->price}}€"
-                />
+                <a href="{{route('item.show', compact('item'))}}">
+                    <x-card 
+                    title="{{$item->title}}"
+                    price="{{$item->price}}€"
+                    />
+                </a>
             </div>
             @endforeach
         </div>
