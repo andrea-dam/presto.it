@@ -5,9 +5,9 @@ font-family: 'Catamaran', sans-serif;*/
 /* Palette di colori */
 
 :root {
-    --first: #4357adff;
+    --first: rgb(196, 92, 145);
     --second: #e7cfbcff;
-    --third: #33658aff;
+    --third: rgb(166, 93, 188);
     --fourth: #fff4ecff;
     --fifth: #5f1a37ff;
 }
@@ -191,6 +191,31 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--fifth);
 }
 
+.btn-register-login{
+    display:inline-block;
+    padding:0.6em 1em;
+    border:none;
+    margin:0.2em 0.1em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:"arial";
+    font-weight:300;
+    color:#FDFDFD;
+    border-radius:3em;
+    text-align:center;
+    transition: 0.1s;
+    background:rgba(255, 7, 119, 0.648);
+    cursor:pointer;
+    font-weight:bold;
+    letter-spacing: 0.05em;
+  }
+  .btn-register-login:hover{
+    background:rgba(255, 7, 119, 0.79);
+  }
+  .btn-register-login:active, .btn-register-login:focus{
+    background:rgb(255, 7, 119);
+  }
+
 
 
 /* @keyframes myAnim {
@@ -258,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: #000000;
 }
 
-/* Login */
+/* Login e register */
 .form-user{
     background-color: var(--fifth);
     box-shadow: 15px 15px 5px 10px rgb(159, 132, 132);

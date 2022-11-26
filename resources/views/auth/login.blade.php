@@ -35,8 +35,8 @@
                         <input id="detail-button" type="checkbox" class="form-check-input" id="remember" name="remember">
                     </div>
                     <div class="d-flex justify-content-between mt-4">
-                        <button type="submit" class="btn btn-success p-3 me-3">Accedi</button>
-                        <a href="{{route('homepage')}}" role="button" class="btn btn-secondary p-3">Torna alla Home</a>
+                        <button type="submit" class="btn-register-login btn btn-success p-3 me-3">Accedi</button>
+                        <a href="{{route('homepage')}}" role="button" class="btn-register-login btn btn-secondary p-3">Torna alla Home</a>
                     </div>
                 </form>
             </div>
