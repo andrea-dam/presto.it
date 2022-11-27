@@ -13,13 +13,13 @@
             </div>
             @endif
             
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-md-8 col-lg-6">
                 @if(session()->has('login'))
                 <div class="alert alert-danger text-center p-2">
                     {{session('login')}}
                 </div>
                 @endif  
-                <form class="form-user  p-5 rounded" method="POST" action="{{route('login')}}">
+                <form class="form-user p-5 rounded my-5" method="POST" action="{{route('login')}}">
                     @csrf
                     {{-- <h2>Accedi:</h2> --}}
                     <div class="d-flex justify-content-between align-items-center">
@@ -41,14 +41,16 @@
                             </span>
                         </div>
                     </div>
-                    <div class="mb-4 form-check d-flex justify-content-between">
+                    <div class="mb-4 form-check d-flex flex-column flex-md-row justify-content-between align-items-center">
                         <div>
                             <input id="detail-button" type="checkbox" class="form-check-input" id="remember" name="remember">
                             <label for="remember" class="form-check-label">Ricordami</label>
                         </div>
-                        <a href="{{route('register')}}" class="text-decoration-none text-light">Non hai un account? Registrati</a>
+                        <div>
+                            <a href="{{route('register')}}" class="text-decoration-none text-light">Non hai un account? Registrati</a>
+                        </div>
                     </div>
-                    <button type="submit" class="btn3 btn border me-3">Accedi</button>
+                    <button type="submit" class="btn3 btn border w-100 py-3">Accedi</button>
                 </form>
             </div>
         </div>

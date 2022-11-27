@@ -387,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn3 {
-    padding: 14px 170px;
+    /* padding: 14px 170px; */
     color: white;
 }
 
@@ -440,10 +440,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Login e register */
-.form-user{
-    margin-top: 90px;
-    margin-left: 120px;
-    width: 65vh;
+.form-user {
+    /* margin-top: 90px; */
+    /* margin-left: 120px; */
+    /* width: 65vh; */
     background-color: var(--fifth);
     box-shadow: 15px 15px 5px 10px rgb(159, 132, 132);
     color: var(--fourth);
