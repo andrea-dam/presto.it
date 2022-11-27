@@ -13,7 +13,7 @@ class CreateItemForm extends Component
     public $title, $category, $description, $price;
 
     protected $rules = [
-        'title' => 'required|min:2',
+        'title' => 'required|min:2|max:67',
         'category' => 'required',
         'description' => 'required|min:2',
         'price' => 'required|regex:/^[0-9\.,]+$/|not_in:0'
@@ -29,7 +29,7 @@ class CreateItemForm extends Component
         $secondFloatRound = number_format((float)$numFormat, 2);
 
         $this->validate();
-      
+
         $item = Item::create([
             'title' => $this->title,
             'category_id' => $this->category,
@@ -37,7 +37,7 @@ class CreateItemForm extends Component
             'price' => $secondFloatRound,
             'user_id' => Auth::user()->id
         ]);
-
+        
         session()->flash('itemCreated', 'Hai inserito con successo il tuo annuncio!');
         $this->reset();
     }
@@ -45,6 +45,8 @@ class CreateItemForm extends Component
 
     public function render()
     {
+        
+
         $categories = Category::all();
         return view('livewire.create-item-form', compact('categories'));
     }
