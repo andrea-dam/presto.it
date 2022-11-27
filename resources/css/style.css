@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--fifth);
 }
 
-.eye{
+.eye {
     background-color: transparent;
     border: none;
     color: black;
@@ -316,18 +316,18 @@ h1, h2, h3, h4, h5, h6 {
     text-align:center;
     position:relative;
     cursor:pointer;
-  }
-  .btn5:hover{
+}
+.btn5:hover{
     background:var(--fourth);
-  }
-  .btn5:active{
+}
+.btn5:active{
     background:var(--fourth);
     top:0.15em;
     color:black;
     box-shadow:none;
-  }
+}
 /* PROVA BOTTONI HOME E REGISTER*/
-  .btn6{
+.btn6{
     display:inline-block;
     padding:0.7em 1.4em;
     margin:0 0.3em 0.3em 0;
@@ -344,20 +344,20 @@ h1, h2, h3, h4, h5, h6 {
     text-align:center;
     position:relative;
     cursor:pointer;
-  }
-  .btn6:hover{
+}
+.btn6:hover{
     background:#d8b448;
-
-  }
-  .btn6:active{
+    
+}
+.btn6:active{
     background:#d8b448;
     top:0.15em;
     color:black;
     box-shadow:none;
-  }
+}
 
 
-  .btn7{
+.btn7{
     display:inline-block;
     padding:0.7em 1.4em;
     margin:0 0.3em 0.3em 0;
@@ -374,21 +374,27 @@ h1, h2, h3, h4, h5, h6 {
     text-align:center;
     position:relative;
     cursor:pointer;
-  }
-  .btn7:hover{
+}
+.btn7:hover{
     background:rgb(105, 80, 55);
-
-  }
-  .btn7:active{
+    
+}
+.btn7:active{
     background:rgb(105, 80, 55);
     top:0.15em;
     color:black;
     box-shadow:none;
-  }
+}
 
-  .btn3{
+.btn3 {
     padding: 14px 170px;
-  }
+    color: white;
+}
+
+.btn3:hover {
+    background-color: white;
+    color: black;
+}
 
 /* @keyframes myAnim {
     0% {
@@ -435,8 +441,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Login e register */
 .form-user{
-   margin-top: 90px;
-   margin-left: 120px;
+    margin-top: 90px;
+    margin-left: 120px;
     width: 65vh;
     background-color: var(--fifth);
     box-shadow: 15px 15px 5px 10px rgb(159, 132, 132);
@@ -454,23 +460,23 @@ h1, h2, h3, h4, h5, h6 {
 .c4l-rating input[name="c4l-rating"] + label:after { content: none; }
 .c4l-rating input[name="c4l-rating"] + label { font-family: 'FontAwesome'; }
 .c4l-rating input[name="c4l-rating"] + label:before {
- background-color: transparent;
- border: none !important;
- color: #ffc107;
- content: '\f005';
- font-size: 1.33333333em;
- transition: none;
+    background-color: transparent;
+    border: none !important;
+    color: #ffc107;
+    content: '\f005';
+    font-size: 1.33333333em;
+    transition: none;
 }
 .c4l-rating input[name="c4l-rating"]:checked ~ label:before {
- background-color: transparent;
- border: none !important;
- color: #607d8b;
+    background-color: transparent;
+    border: none !important;
+    color: #607d8b;
 }
 .c4l-rating input[name="c4l-rating"]:checked + label:before { color: #ffc107; }
 .c4l-rating input[name="c4l-rating"] + label:hover ~ input + label:before { opacity:
-0.6; }
-
-/* Footer */
-footer{
-    background-color: var(--fifth);
-}
+    0.6; }
+    
+    /* Footer */
+    footer{
+        background-color: var(--fifth);
+    }
