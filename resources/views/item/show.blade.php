@@ -17,37 +17,74 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://picsum.photos/2000/2000" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/2000/2000" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/2000/2000" class="d-block w-100" alt="...">
-            </div>
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/2000/2000" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/2000/2000" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/2000/2000" class="d-block w-100" alt="...">
+              </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
       </div>
-      <div class="col-6">
+
+
+      <div class="col-6 p-5">
         <h2 class=" text-start">{{$item->title}} ({{$item->category->name}})</h2>
-        <h2 class="text-start">{{$item->price}} €</h2>
+        <h2 class="text-start text-danger">{{$item->price}} €</h2>
         <h5 class="text-start">{{$item->description}}</h5>
+        <div class="p-3 mt-5">
+          <div class="card p-3 ">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h5 class="card-title">Spedizione rapida</h5>
+            <p class="card-text">Prova Plus gratis per 30 giorni</p>
+          </div>
+          <div class="card p-3 mt-3">
+            <i class="fa-solid fa-truck"></i>
+            <h5 class="card-title">Spedizione standard</h5>
+            <p class="card-text">Gratis</p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-3">
+          <h5 class="me-auto p-3">Recensioni (0)</h5>
+          <div class="c4l-rating p-2">
+            <input name="c4l-rating" type="radio" id="c4l-rate1" value="1" />
+            <label for="c4l-rate1"></label>
+            <input name="c4l-rating" type="radio" id="c4l-rate2" value="2" />
+            <label for="c4l-rate2"></label>
+            <input name="c4l-rating" type="radio" id="c4l-rate3" value="3" />
+            <label for="c4l-rate3"></label>
+            <input name="c4l-rating" type="radio" id="c4l-rate4" value="4" />
+            <label for="c4l-rate4"></label>
+            <input name="c4l-rating" type="radio" id="c4l-rate5" value="5" checked />
+            <label for="c4l-rate5"></label>
+          </div>
+        </div>
+
+        <button class="btn5 ms-3">Acquista ora <i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
+        <button class="btn5 ms-2">Aggiungi al carrello <i class="fa-solid fa-cart-plus"></i></button>
       </div>
-      <div class="col-6">
-        <a class="btn btn-dark mt-3 w-100 p-3" href="{{route('item.index')}}">Tutti gli annunci</a>
-      </div>
-      <div class="col-6">
-        <a class="btn btn-dark mt-3 w-100 p-3" href="{{route('homepage')}}">Torna alla Home</a>
-      </div>
-    </div>
+
+     
+    
+        <div class="mt-5 d-flex justify-content-start">
+          <a class="btn btn-register-login mt-3 w-30 p-3 " href="{{route('item.index')}}">Tutti gli annunci</a>
+          <a class="btn btn-home mt-3 w-30 p-3" href="{{route('homepage')}}">Torna alla Home</a>
+        </div>
+
   </div>
+</div>
+
 </x-layout> 
+
