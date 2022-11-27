@@ -2,7 +2,7 @@
   <x-header></x-header>
   <div class="container">
     <div class="row justify-content-center mb-3">
-      <div class="col-6">
+      <div id="carosello" class="col-6">
         {{-- <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img class="img-fluid" src="https://picsum.photos/200/300" alt="" srcset=""></div>
@@ -72,19 +72,67 @@
           </div>
         </div>
 
-        <button class="btn5 ms-3">Acquista ora <i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
+        
+      <div class="card p-3 mt-3">
+        <section>
+          <details>
+            <summary>
+              <div class="fa-stack">
+                <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
+                <i class="text-success fa-brands fa-envira fa-stack-1x fa-inverse"></i>
+              </div>
+              Imballaggio sostenibile
+            </summary>
+            <p>
+              Tutte le confezioni usate per le spedizioni sono in carta 100% riciclata e reciclabile, prive di plastica.
+            </p>
+          </details>
+        </section>
+        </div>
+        <div class="card p-3">
+          <section>
+            <details>
+              <summary>
+                <div class="fa-stack">
+                  <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="text-secondary fa-solid fa-box-open fa-stack-1x fa-inverse"></i>
+                </div>
+                Resi facili
+              </summary>
+              <p>
+                Hai 14 giorni lavorativi dalla data di ricevimento della merce per esercitare diritto al recesso.
+              </p>
+            </details>
+          </section>
+          </div>
+          <div class="card p-3">
+            <section>
+              <details>
+                <summary>
+                  <div class="fa-stack">
+                    <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="text-warning fa-solid fa-lock fa-stack-1x fa-inverse"></i>
+                  </div>
+                  Pagamenti sicuri
+                </summary>
+                <p>
+                  Pagamenti con carta di credito, Paypal, Bonifico bancario diretto, Scalapay e contrassegno.
+                </p>
+              </details>
+            </section>
+            </div>
+
+        <button class="btn5 mt-5 ms-3">Acquista ora <i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
         <button class="btn5 ms-2">Aggiungi al carrello <i class="fa-solid fa-cart-plus"></i></button>
       </div>
 
-     
     
         <div class="mt-5 d-flex justify-content-start">
-          <a class="btn btn-register-login mt-3 w-30 p-3 " href="{{route('item.index')}}">Tutti gli annunci</a>
-          <a class="btn btn-home mt-3 w-30 p-3" href="{{route('homepage')}}">Torna alla Home</a>
+          <a class="btn text-white btn6 mt-3 w-30 p-3 " href="{{route('item.index')}}">Tutti gli annunci</a>
+          <a class="btn text-white btn7 mt-3 w-30 p-3" href="{{route('homepage')}}">Torna alla Home</a>
         </div>
 
   </div>
 </div>
-
 </x-layout> 
 
