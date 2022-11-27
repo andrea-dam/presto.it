@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col">
                 <h1 id="homepage-title" class="">Presto.it</h1>
-                {{-- <h2>Il tuo portale di annunci</h2> --}}
+                <h2 id="homepage-subtitle">Lo shopping a casa tua</h2>
             </div>
         </div>
     </div>
