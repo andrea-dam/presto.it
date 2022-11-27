@@ -10,23 +10,23 @@
     
     <!-- Right -->
     <div>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-facebook-f"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-twitter"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-twitter"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-google"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-google"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-instagram"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-linkedin"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-linkedin"></i>
       </a>
-      <a href="" class="me-4 link-secondary text-light">
-        <i class="fab fa-github"></i>
+      <a href="" class="me-4 text-decoration-none text-light">
+        <i class="fa-brands fa-github"></i>
       </a>
     </div>
     <!-- Right -->
@@ -41,9 +41,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary text-light"></i>Presto.it
-          </h6>
+          <h6 id="logo-navbar" class="mb-4 logo-navbar">Presto.it</h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
             dolor sit amet, consectetur adipisicing elit.
@@ -115,8 +113,8 @@
                   Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta.
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn-register-login btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                  <a href="{{route('become.revisor')}}" class="btn-register-login btn btn-primary">Continua</a>
+                  <a href="{{route('become.revisor')}}" class="text-white me-2 btn-register-login btn shadow">Continua</a>
+                  <button type="button" class="text-white btn-home btn shadow" data-bs-dismiss="modal">Annulla</button>
                 </div>
               </div>
             </div>
@@ -136,7 +134,7 @@
   
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-    © 2021 Copyright:
+    © 2022 Copyright:
     <a class="text-reset " href="#">$this->Bladers[ ]</a>
   </div>
   <!-- Copyright -->

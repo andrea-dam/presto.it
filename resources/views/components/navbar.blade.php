@@ -35,7 +35,7 @@
                 </li>
                 @else
                 <li class="nav-item">
-                    <a class="nav-link" href="">Benvenuto, {{Auth::user()->name}}</a>
+                    <a class="nav-link" href="">Benvenutə, {{Auth::user()->name}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="" onclick="event.preventDefault(); document.querySelector('#logout-form').submit();">Logout</a>

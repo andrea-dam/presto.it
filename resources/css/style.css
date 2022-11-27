@@ -12,6 +12,15 @@ font-family: 'Catamaran', sans-serif;*/
     --fifth: #5f1a37ff;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--fifth);
+    /* background-color: transparent; */
+}
+
 * {
     font-family: 'Catamaran', sans-serif;
 }
@@ -118,6 +127,40 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
 }
 
+.testo-card{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    background-color: rgba(64, 62, 63, 0.637);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+
+.anim-cat:hover {
+    animation: up 0.10s linear 0s 1 normal forwards;
+}
+.anim-cat {
+    animation: down 0.10s linear 0s 1 normal forwards;
+}
+
+@keyframes up {
+    0% { translate: 0 0;
+    }
+    100% {
+        translate: 0 -15px;
+    }
+}
+@keyframes down {
+    0% { translate: 0 -15px;
+    }
+    100% {
+        translate: 0 0;
+    }
+}
+
 .item:hover {
     animation: ingrandimento 0.25s linear 0s 1 normal forwards;
     z-index: 1;
@@ -125,30 +168,6 @@ h1, h2, h3, h4, h5, h6 {
 .item {
     animation: backToNormal 0.25s linear 0s 1 normal forwards;
     z-index: 0;
-}
-
-.testo-card{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100px;
-    background-color: rgba(88, 14, 43, 0.591);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-}
-
-.sfondo-sfocato{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    
-    background-color: rgba(93, 6, 41, 0.7); /* Black w/opacity/see-through */
-    height: 100px;
-    width: 100%;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
 }
 
 @keyframes ingrandimento {
@@ -171,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
 }
 
-#card{
+#card {
     border: none;
 }
 
@@ -209,17 +228,15 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-
-
 /* Bottoni */
-
 .detail-button:hover{
     animation-timing-function: ease-in-out;
     /* color: black !importanlt; */
     transform: scale(1.2);
     /* background-color: var(--second); */
     transition-duration: 1s;
-} 
+}
+
 
 #btn-search:hover{
     color: var(--fifth);

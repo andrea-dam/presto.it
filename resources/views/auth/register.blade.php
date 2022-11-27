@@ -38,7 +38,7 @@
                     </div>
                     <div class="d-flex justify-content-between mt-4">
                         <button type="submit" class="btn-register-login btn p-3">Registrati</button>
-                        <a href="{{route('homepage')}}" role="button" class="btn-register-login btn p-3">Torna alla Home</a>
+                        <a href="{{route('homepage')}}" role="button" class="btn-home btn p-3 shadow btn p-3">Torna alla Home</a>
                     </div>
                 </form>
             </div>
