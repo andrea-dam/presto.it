@@ -2,20 +2,33 @@
   <div class="row align-items-center">
     <div class="p-5 col-6 d-flex flex-column align-items-center">
       <h2 class="text-center">Anteprima</h2>
-      {{-- <div class="card @error('title','category', 'description') d-none @enderror" style="width: 30rem;"> --}}
-
-        @if(!$price || session('price'))
-        <x-card 
-                title="{{$title}}"
-                price="{{$price}}"
-                />
-        @else
-        <x-card 
-                title="{{$title}}"
-                price="{{$price}}€"
-                />
-        @endif
-      
+      {{-- logica per determinare cosa viene visto sulla card --}}
+      @if ($errors->has('title') && $errors->has('price'))
+      <x-card 
+      title="{{null}}"
+      price="{{null}}"
+      />
+      @elseif($errors->has('title'))
+      <x-card 
+      title="{{null}}"
+      price="{{$price}}€"
+      />
+      @elseif($errors->has('price'))
+      <x-card 
+      title="{{$title}}"
+      price="{{null}}"
+      />
+      @elseif(strlen($price) < 1)
+      <x-card 
+      title="{{$title}}"
+      price="{{$price}}"
+      />
+      @else
+      <x-card 
+      title="{{$title}}"
+      price="{{$price}}€"
+      />
+      @endif 
     </div>
     <div class="col-6">
       <form wire:submit.prevent="store" id="shadow">
@@ -27,15 +40,15 @@
         @csrf
         <div class="mb-3">
           <div class="d-flex justify-content-between">
-          <label for="title" class="form-label">Nome articolo *</label><span class="fst-italic text-muted">I campi contrassegnati con * sono obbligatori</span>
+            <label for="title" class="form-label">Nome articolo *</label><span class="fst-italic text-muted">I campi contrassegnati con * sono obbligatori</span>
           </div>
           <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model.lazy="title">
           @error('title')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="mb-3">
           <label for="category" class="form-label">Categoria *</label>
-          <select class="form-select @error('category') is-invalid @enderror" wire:model.lazy="category">
-            <option selected>Scegli la categoria dell'annuncio</option>
+          <select class="form-select @error('category') is-invalid @enderror" wire:model.defer="category">
+            <option value="{{null}}" selected>Scegli la categoria dell'annuncio</option>
             @foreach ($categories as $category)
             <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
@@ -52,8 +65,8 @@
           <div class="input-group mb-3">
             <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" value="{{$price}}€" wire:model="price">
             <span class="input-group-text">€</span>
-            @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
           </div>
+          @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="d-flex justify-content-between">
           <button type="submit" class="btn-register-login text-white btn p-3 shadow">Pubblica Annuncio</button>

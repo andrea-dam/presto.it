@@ -21,6 +21,13 @@ font-family: 'Catamaran', sans-serif;*/
     /* background-color: transparent; */
 }
 
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0;
+        background: none;
+    }
+}
+
 * {
     font-family: 'Catamaran', sans-serif;
 }
@@ -162,11 +169,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item:hover {
-    animation: ingrandimento 0.25s linear 0s 1 normal forwards;
+    animation: ingrandimento 0.1s linear 0s 1 normal forwards;
     z-index: 1;
 }
 .item {
-    animation: backToNormal 0.25s linear 0s 1 normal forwards;
+    animation: backToNormal 0.1s linear 0s 1 normal forwards;
     z-index: 0;
 }
 
