@@ -27,7 +27,7 @@ class RevisorController extends Controller
 
     public function acceptItem(Item $item) {
         $item->setAccepted(true);
-        return redirect()->back()->with('message', 'Hai accettato l\'annuncio');
+        return redirect(route('revisor.index'))->with('message', 'Hai accettato l\'annuncio');
     }
 
     public function rejectItem(Item $item) {
