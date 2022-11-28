@@ -48,7 +48,7 @@
         </div>
         <div class="mb-3">
           <label for="category" class="form-label">Categoria *</label>
-          <select class="form-select @error('category') is-invalid @enderror" wire:model.defer="category">
+          <select class="form-select @error('category') is-invalid @enderror" wire:model.lazy="category">
             <option value="{{null}}" selected>Scegli la categoria dell'annuncio</option>
             @foreach ($categories as $category)
             <option value="{{$category->id}}">{{$category->name}}</option>

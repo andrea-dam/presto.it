@@ -12,30 +12,41 @@ class CreateItemForm extends Component
 {
     use WithFileUploads;
 
-    public $title, $category, $description, $price, $temporary_images, $images = [], $image;
+    public $title, $category, $description, $price, $temporary_images, $images = [];
 
     protected $rules = [
         'title' => 'required|min:2|max:50',
         'category' => 'required',
         'description' => 'required|min:2',
         'price' => 'required|regex:/^[0-9\.,]+$/|not_in:0',
-        'images.*' => 'required',
-        'temporary_images.*' => 'required',
+        'images.*' => 'image|required|max:2048',
+        'temporary_images.*' => 'image|required|max:2048',
     ];
     
     public function updated($propertyName){
         $this->validateOnly($propertyName);
     }
 
+    public function updatedTemporaryImages(){
+        if($this->validate([
+            'temporary_images.*'=> 'image|required|max:2048',
+            ])){
+                foreach($this->temporary_images as $image){
+                    $this->images[] = $image;
+                }
+            }
+    }
+    public function removeImage($key){
+        if(in_array($key, array_keys($this->images))){
+            unset($this->images[$key]);
+        }
+    }
+
     public function store(){
         $numFormat = str_replace(",",".",$this->price);
         $secondFloatRound = number_format((float)$numFormat, 2);
 
-        $this->validate();
-
-        foreach ($this->images as $image) {
-            $image->store('images');
-        }
+            $this->validate();
 
         $item = Item::create([
             'title' => $this->title,
@@ -45,6 +56,13 @@ class CreateItemForm extends Component
             'user_id' => Auth::user()->id
         ]);
         
+        if(count($this->images)){
+            foreach($this->images as $image){
+                $item->images()->create(['path'=>$image->store('images', 'public')]);
+            }
+        }
+
+
         session()->flash('itemCreated', 'Hai inserito con successo il tuo annuncio!');
         $this->reset();
     }
