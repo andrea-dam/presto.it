@@ -40,28 +40,25 @@
                 </div>
             </div>
             <div class="col-6">
-                <h1 class="text-center">categoria</h1>
-                <p class="text-center">{{$item_to_check->category->name}}</p>
-                <h1 class="text-center">descrizione prodotto</h1>
-                <p class="text-center">{{$item_to_check->description}}</p>
-                <h1 class="text-center">prezzo</h1>
-                <p class="text-center">{{$item_to_check->price}} €</p>
+                <h2 class="text-start">{{$item_to_check->category->name}}</h2>
+                <h2 class="text-start text-danger">{{$item_to_check->price}} €</h2>
+                <h5 class="text-start">{{$item_to_check->description}}</h5>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.reject_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
                     <button class="btn btn-danger mt-3 w-100 p-3" type="submit">Rifiuta l'annuncio</button>
                 </form>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.undo-item', ['item' => $item_to_undo])}}" method="POST">
                     @csrf
                     @method('PATCH')
                     <button class="btn btn-warning mt-3 w-100 p-3" type="submit">annulla ultima modifica</button>
                 </form>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
@@ -100,21 +97,18 @@
                 </div>
             </div>
             <div class="col-6">
-                <h1 class="text-center">categoria</h1>
-                <p class="text-center">{{$item_to_check->category->name}}</p>
-                <h1 class="text-center">descrizione prodotto</h1>
-                <p class="text-center">{{$item_to_check->description}}</p>
-                <h1 class="text-center">prezzo</h1>
-                <p class="text-center">{{$item_to_check->price}} €</p>
+                <h2 class="text-start">{{$item_to_check->category->name}}</h2>
+                <h2 class="text-start text-danger">{{$item_to_check->price}} €</h2>
+                <h5 class="text-start">{{$item_to_check->description}}</h5>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.reject_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
                     <button class="btn btn-danger mt-3 w-100 p-3" type="submit">Rifiuta l'annuncio</button>
                 </form>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
@@ -122,9 +116,8 @@
                 </form>
             </div>
             @endif
-            
             @if($item_to_undo && !$item_to_check)
-            <div class="col min-vh-50">
+            <div class="col">
                 <form action="{{route('revisor.undo-item', ['item' => $item_to_undo])}}" method="POST">
                     @csrf
                     @method('PATCH')

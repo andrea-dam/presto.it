@@ -39,7 +39,7 @@
                     <div class="mb-4">
                         <label for="password_confirmation" class="form-label">Conferma Password</label>
                         <div class="position-relative">
-                            <button class="eye position-absolute top-50 end-0 translate-middle-y" type="button" onclick="showPwd()" ></button>
+                            
                             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
                         </div>
                     </div>

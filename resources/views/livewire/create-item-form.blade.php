@@ -1,6 +1,6 @@
 <div class="container mb-5">
   <div class="row align-items-center">
-    <div class="p-5 col-6 d-flex flex-column align-items-center">
+    <div class="p-5 col-12 col-md-6 d-flex flex-column align-items-center">
       <h2 class="text-center">Anteprima</h2>
       {{-- logica per determinare cosa viene visto sulla card --}}
       @if ($errors->has('title') && $errors->has('price'))
@@ -30,7 +30,7 @@
       />
       @endif 
     </div>
-    <div class="col-6">
+    <div class="col-12 col-md-6">
       <form wire:submit.prevent="store" id="shadow">
         @if(session()->has('itemCreated'))
         <div class="alert alert-success p-2">
@@ -39,8 +39,9 @@
         @endif
         @csrf
         <div class="mb-3">
-          <div class="d-flex justify-content-between">
-            <label for="title" class="form-label">Nome articolo *</label><span class="fst-italic text-muted">I campi contrassegnati con * sono obbligatori</span>
+          <div class="row justify-content-between">
+            <span class="fst-italic text-muted">I campi contrassegnati con * sono obbligatori</span>
+            <label for="title" class="form-label">Nome articolo *</label>
           </div>
           <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model.lazy="title">
           @error('title')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
