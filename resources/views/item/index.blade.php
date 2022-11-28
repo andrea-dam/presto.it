@@ -16,7 +16,7 @@
             @empty
             <div class="col-12">
                 <div class="alert alert-warning">
-                    <p>Non ci sono Annunci.</p>
+                    <p>Non ci sono annunci per questa ricerca.</p>
                 </div>
             </div>
             @endforelse

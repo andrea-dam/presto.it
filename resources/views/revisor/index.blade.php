@@ -7,7 +7,7 @@
     <x-header>{{$item_to_check ? 'Annuncio da Revisionare' : 'Nessun annuncio da revisionare'}}
         {{-- <i class="fa-regular fa-face-frown"></i> --}}
     </x-header>
-    <div class="container"> 
+    <div class="container min-vh-100"> 
         <div class="row justify-content-center mb-3">
             @if($item_to_undo && $item_to_check)
             <h1>{{$item_to_check->title}}</h1>

@@ -7,31 +7,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
+                    <a class="nav-link {{Route::is('homepage') ? 'active' : ''}}" aria-current="page" href="{{route('homepage')}}">Home</a>
                 </li>
                 @auth
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('item.create')}}">Inserisci un Annuncio</a>
+                    <a class="nav-link {{Route::is('item.create') ? 'active' : ''}}" href="{{route('item.create')}}">Inserisci un Annuncio</a>
                 </li>
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('revisor.index')}}">Area Revisore
+                    <a class="nav-link {{Route::is('revisor.index') ? 'active' : ''}}" href="{{route('revisor.index')}}">Area Revisore
                         <span class="badge p-1 position-absolute translate-middle bg-danger rounded-circle">{{App\Models\Item::toBeRevisionedCount()}}</span>
                     </a>
                 </li>
                 @endif
                 @endauth
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('item.index')}}">Tutti gli Annunci</a>
+                    <a class="nav-link {{Route::is('item.index') ? 'active' : ''}}" href="{{route('item.index')}}">Tutti gli Annunci</a>
                 </li>
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0 me-3">
                 @guest
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('login')}}">Accedi</a>
+                    <a class="nav-link {{Route::is('login') ? 'active' : ''}}" href="{{route('login')}}">Accedi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('register')}}">Registrati</a>
+                    <a class="nav-link {{Route::is('register') ? 'active' : ''}}" href="{{route('register')}}">Registrati</a>
                 </li>
                 @else
                 <li class="nav-item">
