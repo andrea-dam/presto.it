@@ -18,14 +18,16 @@ class RevisorController extends Controller
         $this->middleware('isRevisor')->except('becomeRevisor','makeRevisor');
     }
 
+
     public function index() {
         $item_to_check = Item::where('is_accepted', null)->first();
-        return view('revisor.index', compact('item_to_check'));
+        $item_to_undo = Item::where('is_accepted', false)->first();
+        return view('revisor.index', compact('item_to_check'),compact('item_to_undo'));
     }   
 
     public function acceptItem(Item $item) {
         $item->setAccepted(true);
-        return redirect()->back()->with('message', 'Hai accettato l\'annuncio');
+        return redirect(route('revisor.index'))->with('message', 'Hai accettato l\'annuncio');
     }
 
     public function rejectItem(Item $item) {
