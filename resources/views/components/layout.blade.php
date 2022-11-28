@@ -10,12 +10,10 @@
 </head>
 <body class="bg-uno">
 
-      
-
     <x-navbar />
     {{$slot}}
     <x-footer />
     @livewireScripts
-    <script src="https://kit.fontawesome.com/c2171b1e0d.js" crossorigin="anonymous"></script>
+    {{-- <script src="https://kit.fontawesome.com/c2171b1e0d.js" crossorigin="anonymous"></script> --}}
 </body>
 </html>
