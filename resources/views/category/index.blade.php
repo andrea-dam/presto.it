@@ -4,22 +4,22 @@
     
     <main class="container">
         <div class="row justify-content-center">
-            @foreach ($category->items as $item)
-            <div class="col-12 col-md-3">
-                <div class="card my-2" style="min-height: 450px">
-                    <img src="https://picsum.photos/4000/2000" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">{{$item->title}}</h3>
-                        <h5 class="card-title">{{$item->category->name}}</h5>
-                        <p class="card-text">Descrizione: {{$item->description}}</p>
-                        <p class="card-text">Prezzo: {{$item->price}}€</p>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="{{route('item.show', compact('item'))}}" class="btn btn-primary mb-4">Dettaglio</a>
-                    </div>
-                </div> 
+            @forelse ($category->items as $item)
+            <div class="col-12 item col-md-6 col-lg-3 my-4">
+                <a href="{{route('item.show', compact('item'))}}" class="text-white text-decoration-none mb-4">
+                    <x-card 
+                    title="{{$item->title}}"
+                    price="{{$item->price}}€"
+                    />
+                </a>
             </div>
-            @endforeach
+            @empty
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <p>Non ci sono Annunci.</p>
+                </div>
+            </div>
+            @endforelse
         </div>
     </main>
 
