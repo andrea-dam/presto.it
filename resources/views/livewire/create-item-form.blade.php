@@ -57,8 +57,8 @@
           @error('category')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="mb-3">
-          <label for="images">Seleziona le immagini *</label>
-          <input type="file" wire:model="temporary_images" name="images" id="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror">
+            <label for="images">Seleziona le immagini descrittive*</label>
+            <input type="file" wire:model="temporary_images" name="images" id="image-card" multiple class="form-control @error('temporary_images.*') is-invalid @enderror">
           @error('temporary_images.*')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         @if ($images)

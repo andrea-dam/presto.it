@@ -400,23 +400,6 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
-/* @keyframes myAnim {
-    0% {
-        animation-timing-function: ease-out;
-        transform: scale(1);
-        transform-origin: center center;
-        background-color: var(--third);
-        
-    }
-    
-    
-    100% {
-        animation-timing-function: ease-out;
-        transform: scale(1.2);
-        background-color: var(--second);
-    }
-}
-*/
 
 /* Icone */
 .icon {
@@ -426,6 +409,10 @@ h1, h2, h3, h4, h5, h6 {
 .icon2 {
     color: var(--fifth) !important;
 }
+
+
+
+
 
 /* Anteprima inserisci annuncio*/
 #preview{

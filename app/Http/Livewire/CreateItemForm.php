@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Jobs\ResizeImage;
 use App\Models\Item;
 use Livewire\Component;
 use App\Models\Category;
@@ -46,7 +47,7 @@ class CreateItemForm extends Component
         $numFormat = str_replace(",",".",$this->price);
         $secondFloatRound = number_format((float)$numFormat, 2);
 
-            $this->validate();
+        $this->validate();
 
         $item = Item::create([
             'title' => $this->title,
@@ -58,8 +59,13 @@ class CreateItemForm extends Component
         
         if(count($this->images)){
             foreach($this->images as $image){
-                $item->images()->create(['path'=>$image->store('images', 'public')]);
+                $newFileName = "items/{$item->id}";
+                
+                $newImage = $item->images()->create(['path'=>$image->store($newFileName, 'public')]);
+       
+                dispatch(new ResizeImage($newImage->path, 1200, 900));
             }
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
 
