@@ -57,6 +57,26 @@
           @error('category')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="mb-3">
+          <label for="images">Seleziona le immagini *</label>
+          <input type="file" wire:model="temporary_images" name="images" id="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror">
+          @error('temporary_images.*')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
+        </div>
+        @if ($images)
+        <div class="row">
+          <div class="col-12">
+            <p>Anteprima:</p>
+            <div class="row">
+              @foreach ($images as $key => $image)
+              <div class="col">
+                <div class="image-preview" style="background-image: url({{$image->temporaryUrl()}});"></div>
+                <button type="button" class="btn btn-danger" wire:click="removeImage({{$key}})">Cancella</button>
+              </div>
+              @endforeach
+            </div>
+          </div>
+        </div>
+        @endif
+        <div class="mb-3">
           <label for="description" class="form-label">Descrivi il tuo articolo *</label>
           <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror" id="description" rows="5"></textarea>
           @error('description')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
