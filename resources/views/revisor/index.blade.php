@@ -7,7 +7,7 @@
     <x-header>{{$item_to_check ? 'Annuncio da Revisionare' : 'Nessun annuncio da revisionare'}}
         <i class="fa-regular fa-face-frown"></i>
     </x-header>
-    @if ($item_to_undo)
+    @if ($item_to_undo && $item_to_check)
     <div class="container"> 
         <div class="row justify-content-center mb-3">
             <h1>{{$item_to_check->title}}</h1>
@@ -125,6 +125,18 @@
                 </form>
             </div>
         </div>
-    </div> 
+    </div>
+    @else
+    <div class="container min-vh-100">
+        <div class="row">
+            <div class="col">
+                <form action="{{route('revisor.undo-item', ['item' => $item_to_undo])}}" method="POST">
+                    @csrf
+                    @method('PATCH')
+                    <button class="btn btn-warning mt-3 w-100 p-3" type="submit">annulla ultima modifica</button>
+                </form>
+            </div>
+        </div>
+    </div>
     @endif
 </x-layout>
