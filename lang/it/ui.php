@@ -101,7 +101,7 @@ return [
     'message' => 'Cliccando sul pulsante Continua verrà inviata una mail all\'admin di Presto.it con i tuoi dati per verificare la tua richiesta.',
     'continue' => 'Continua',
     'cancel' => 'Annulla',
-    'becomeRevisor' => 'Diventa Revisore',  
+    'becomeRevisor' => 'Diventa Revisore',
     'changeLanguage' => 'Cambia Lingua',
     'social' => 'Seguici sulle nostre pagine Social:'
 ];

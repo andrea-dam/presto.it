@@ -96,6 +96,8 @@ return[
      'warning' => 'Uwaga',
      'message' => 'klikając na przycisk "kontynuuj" twoje dane osobowe będą wysyłane przez email do admina strony Presto.it aby zweryfikować twòj wniosek.',
      'continues' => 'kontynuuj',
-     'annuls' => 'Anuluj',
-     'becomeReviewer' => 'Zostań kontrolerem',
+     'cancel' => 'Anuluj',
+     'becomeRevisor' => 'Zostań kontrolerem',
+     'changeLanguage' => 'Zmien język',
+     'social' => 'śledź nas na naszych mediach społecznościowych:'
 ];
