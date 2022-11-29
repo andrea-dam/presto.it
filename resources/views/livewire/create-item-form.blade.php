@@ -78,13 +78,13 @@
         @endif
         <div class="mb-3">
           <label for="description" class="form-label">Descrivi il tuo articolo *</label>
-          <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror" id="description" rows="5"></textarea>
+          <textarea wire:model.lazy="description" type="text" class="form-control @error('description') is-invalid @enderror" id="description" rows="5"></textarea>
           @error('description')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="mb-3">
           <label for="price" class="form-label">Prezzo *</label>
           <div class="input-group mb-3">
-            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" value="{{$price}}€" wire:model="price">
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" value="{{$price}}€" wire:model.debounce.100ms="price">
             <span class="input-group-text">€</span>
           </div>
           @error('price')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
