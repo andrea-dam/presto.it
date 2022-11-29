@@ -15,7 +15,7 @@
     
     {{-- Sezione Categorie --}}
     <section class="container text-center my-5">
-        <h2 id="tutte-le-categorie" class="">Tutte le Categorie</h2>
+        <h2 id="tutte-le-categorie" class="">{{__('ui.allCategories')}}</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
             <div class="col distanza-categorie anim-cat">
                 <a class="text-decoration-none" href="{{route('category.index', ['id' => 1])}}">

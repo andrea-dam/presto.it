@@ -18,6 +18,7 @@ use App\Http\Controllers\RevisorController;
 */
 // Rotte Public
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+Route::post('/lang/{lang}',[PublicController::class,'setLanguage'])->name('set_language_locale');
 
 // rotte item
 Route::get('/item/create', [ItemController::class, 'create'])->name('item.create');
@@ -37,3 +38,5 @@ Route::get('make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->na
 
 // Rotte ricerca
 Route::get('/ricerca/annuncio', [PublicController::class, 'searchItems'])->name('items.search');
+
+

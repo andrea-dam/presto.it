@@ -83,7 +83,15 @@
             <a href="#!" class="text-reset">Settings</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
+            {{-- @dd(App::currentLocale()) --}}
+              {{-- <a class="" href="" onclick="event.preventDefault(); document.querySelector('#lang-en').submit();"><x-flag-country-pl/></a>
+              <form action="{{route('set_language_locale',['lang'=>'en'])}}" class="d-none" id="lang-en" method="POST">
+                @csrf
+              </form> --}}
+              <form action="{{route('set_language_locale','en')}}" method="POST">
+                @csrf
+                <button type="submit"><img src="{{asset('vendor/blade-flags/language-en.svg')}}" width="32" height="32" alt=""></button>
+              </form>
           </p>
           <p>
             <a href="#!" class="text-reset">Help</a>
