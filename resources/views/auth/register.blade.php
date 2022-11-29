@@ -22,28 +22,28 @@
                         <a href="{{route('homepage')}}" role="button" class="btn text-light"><i class="fa-solid fa-house"></i></a>
                     </div>
                     <div class="mb-4 mt-4">
-                        <label for="name" class="form-label">Nome Utente</label>
+                        <label for="name" class="form-label">{{__('ui.username')}}</label>
                         <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-4">
-                        <label for="email" class="form-label">Indirizzo Email</label>
+                        <label for="email" class="form-label">{{__('ui.emailAddress')}}</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">{{__('ui.password')}}</label>
                         <div class="position-relative">
                             {{-- <button class="eye position-absolute top-50 end-0 translate-middle-y" type="button" onclick="showPwd()" ><i class="fa-solid fa-eye"></i></button> --}}
                             <input type="password" class="form-control" id="password" name="password">
                         </div>
                     </div>
                     <div class="mb-4">
-                        <label for="password_confirmation" class="form-label">Conferma Password</label>
+                        <label for="password_confirmation" class="form-label">{{__('ui.confirmPassword')}}</label>
                         <div class="position-relative">
                             
                             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
                         </div>
                     </div>
-                    <button type="submit" class="btn3 border btn w-100 py-3 mt-3">Registrati</button>
+                    <button type="submit" class="btn3 border btn w-100 py-3 mt-3">{{__('ui.registered')}}</button>
                 </form>
             </div>
         </div>

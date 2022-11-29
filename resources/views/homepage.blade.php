@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col">
                 <h1 id="homepage-title" class="">Presto.it</h1>
-                <h2 id="homepage-subtitle">Lo shopping a casa tua</h2>
+                <h2 id="homepage-subtitle">{{__('ui.slogan')}}</h2>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
                             <i class="icon2 fa-solid fa-shirt fa-stack-1x fa-inverse"></i>
                         </div>
                         <div class="testo-categorie">
-                            <h4 class="icon">Abbigliamento</h4>
+                            <h4 class="icon">{{__('ui.clothing')}}</h4>
                         </div>
                     </div>
                 </a>  
@@ -39,7 +39,7 @@
                             <i class="icon2 fa-solid fa-couch fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Arredamento</h4>
+                            <h4 class="icon">{{__('ui.furniture')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -53,7 +53,7 @@
                             <i class="icon2 fa-solid fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Elettronica</h4>
+                            <h4 class="icon">{{__('ui.electronics')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -67,7 +67,7 @@
                             <i class="icon2 fa-solid fa-film fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Film</h4>
+                            <h4 class="icon">{{__('ui.film')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -82,7 +82,7 @@
                             <i class="icon2 fa-solid fa-dumbbell fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Fitness</h4>
+                            <h4 class="icon">{{__('ui.fitness')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -96,7 +96,7 @@
                             <i class="icon2 fa-solid fa-tree fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Giardinaggio</h4>
+                            <h4 class="icon">{{__('ui.gardening')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -110,7 +110,7 @@
                             <i class="icon2 fa-solid fa-gamepad fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Giochi</h4>
+                            <h4 class="icon">{{__('ui.games')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -124,7 +124,7 @@
                             <i class="icon2 fa-solid fa-book-open fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Libri</h4>
+                            <h4 class="icon">{{__('ui.books')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -138,7 +138,7 @@
                             <i class="icon2 fa-solid fa-car fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Motori</h4>
+                            <h4 class="icon">{{__('ui.engines')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -152,7 +152,7 @@
                             <i class="icon2 fa-solid fa-music fa-stack-1x fa-inverse"></i>
                         </span>
                         <div class="testo-categorie">
-                            <h4 class="icon">Musica</h4>
+                            <h4 class="icon">{{__('ui.music')}}</h4>
                         </div>
                     </div>
                 </a>
@@ -163,7 +163,7 @@
     {{-- Sezione annunci --}}
     <main class="container-fluid text-center mb-5">
         <div class="row bg-due p-4 justify-content-center">
-            <h2 class="col-12 fs-5 text-light text-start">Ultimi Articoli</h2>
+            <h2 class="col-12 fs-5 text-light text-start">{{__('ui.latestArticles')}}</h2>
             @forelse ($items as $item)
             <div class="col-12 item col-md-12 col-lg-3 border-0 my-4">
                 <a href="{{route('item.show', compact('item'))}}">

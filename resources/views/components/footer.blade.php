@@ -74,27 +74,25 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+            {{__('ui.changeLanguage')}}
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <form class="bg-transparent" action="{{route('set_language_locale',['lang' => 'it'])}}" method="POST">
+              @csrf
+              <button class="p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-it.svg')}}" width="32" height="34" alt=""></button>
+            </form>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <form class="bg-transparent" action="{{route('set_language_locale',['lang' => 'en'])}}" method="POST">
+              @csrf
+              <button class="p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-en.svg')}}" width="32" height="34" alt=""></button>
+            </form>
           </p>
           <p>
-            {{-- @dd(App::currentLocale()) --}}
-              {{-- <a class="" href="" onclick="event.preventDefault(); document.querySelector('#lang-en').submit();"><x-flag-country-pl/></a>
-              <form action="{{route('set_language_locale',['lang'=>'en'])}}" class="d-none" id="lang-en" method="POST">
+              <form class="bg-transparent" action="{{route('set_language_locale',['lang' => 'pl'])}}" method="POST">
                 @csrf
-              </form> --}}
-              <form action="{{route('set_language_locale','en')}}" method="POST">
-                @csrf
-                <button type="submit"><img src="{{asset('vendor/blade-flags/language-en.svg')}}" width="32" height="32" alt=""></button>
+                <button class="p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-pl.svg')}}" width="32" height="34" alt=""></button>
               </form>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -102,11 +100,11 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
+          <h6 class="text-uppercase fw-bold mb-4">{{__('ui.contacts')}}</h6>
           <!-- Button trigger modal -->
           <i class="fa-solid fa-toolbox"></i>
           <button type="button" class="btn text-light mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Diventa Revisore
+            {{__('ui.becomeReviewer')}}
           </button>
           
           <!-- Modal -->
@@ -114,15 +112,15 @@
             <div class=" modal-dialog">
               <div class="modal-revisor modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5 text-light" id="staticBackdropLabel">Avviso</h1>
+                  <h1 class="modal-title fs-5 text-light" id="staticBackdropLabel">{{__('ui.warning')}}</h1>
                   <button type="button" class="bg-light btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-light">
-                  Cliccando sul pulsante Continua verrà inviata una mail all'admin di Presto.it con <strong>i tuoi dati</strong> per verificare la tua richiesta.
+                  {{__('ui.message')}}
                 </div>
                 <div class="modal-footer">
-                  <a href="{{route('become.revisor')}}" class="text-white me-2 btn-register-login btn shadow">Continua</a>
-                  <button type="button" class="text-white btn-home btn shadow" data-bs-dismiss="modal">Annulla</button>
+                  <a href="{{route('become.revisor')}}" class="text-white me-2 btn-register-login btn shadow"> {{__('ui.continues')}}</a>
+                  <button type="button" class="text-white btn-home btn shadow" data-bs-dismiss="modal">{{__('ui.annuls')}}</button>
                 </div>
               </div>
             </div>

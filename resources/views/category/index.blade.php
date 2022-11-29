@@ -16,7 +16,7 @@
             @empty
             <div class="col-12">
                 <div class="alert alert-warning">
-                    <p>Non ci sono annunci.</p>
+                    <p>{{__('ui.noAnnouncement')}}</p>
                 </div>
             </div>
             @endforelse

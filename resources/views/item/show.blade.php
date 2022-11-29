@@ -35,8 +35,7 @@
           </button>
         </div>
       </div>
-      
-      
+            
       <div class="col-12 col-md-6 mt-5 mt-md-0">
         <h2 class="text-start">{{$item->title}} ({{$item->category->name}})</h2>
         <h2 class="text-start text-danger">{{$item->price}} €</h2>
@@ -44,18 +43,18 @@
         <div class="px-5 mt-4">
           <div class="card p-3">
             <i class="fa-solid fa-truck-fast mb-2"></i>
-            <h5 class="card-title">Spedizione rapida</h5>
-            <p class="card-text">Prova Plus gratis per 30 giorni</p>
+            <h5 class="card-title"> {{__('ui.fastShipping')}}</h5>
+            <p class="card-text">{{__('ui.evidence')}}</p>
           </div>
           <div class="card p-3 mt-3">
             <i class="fa-solid fa-truck mb-2"></i>
-            <h5 class="card-title">Spedizione standard</h5>
-            <p class="card-text">Gratis</p>
+            <h5 class="card-title">{{__('ui.expedition')}}</h5>
+            <p class="card-text">{{__('ui.gratis')}}</p>
           </div>
         </div>
         
         <div class="d-flex mb-3 mt-3">
-          <h5 class="me-auto p-3">Recensioni (0)</h5>
+          <h5 class="me-auto p-3">{{__('ui.reviews')}}</h5>
           <div class="c4l-rating p-2">
             <input name="c4l-rating" type="radio" id="c4l-rate1" value="1" />
             <label for="c4l-rate1"></label>
@@ -79,10 +78,10 @@
                 <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
                 <i class="text-success fa-brands fa-envira fa-stack-1x fa-inverse"></i>
               </div>
-              Imballaggio sostenibile
+              {{__('ui.packaging')}}
             </summary>
             <p>
-              Tutte le confezioni usate per le spedizioni sono in carta 100% riciclata e reciclabile, prive di plastica.
+              {{__('ui.expeditions')}}
             </p>
           </details>
         </section>
@@ -95,10 +94,10 @@
                   <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
                   <i class="text-secondary fa-solid fa-box-open fa-stack-1x fa-inverse"></i>
                 </div>
-                Resi facili
+                {{__('ui.rendered')}}
               </summary>
               <p>
-                Hai 14 giorni lavorativi dalla data di ricevimento della merce per esercitare diritto al recesso.
+                {{__('ui.goods')}}
               </p>
             </details>
           </section>
@@ -111,24 +110,24 @@
                     <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
                     <i class="text-warning fa-solid fa-lock fa-stack-1x fa-inverse"></i>
                   </div>
-                  Pagamenti sicuri
+                  {{__('ui.securePayments')}}
                 </summary>
                 <p>
-                  Pagamenti con carta di credito, Paypal, Bonifico bancario diretto, Scalapay e contrassegno.
+                  {{__('ui.payments')}}
                 </p>
               </details>
             </section>
             </div>
 
-        <button class="btn5 mt-5 ms-3">Acquista ora <i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
-        <button class="btn5 ms-2">Aggiungi al carrello <i class="fa-solid fa-cart-plus"></i></button>
+        <button class="btn5 mt-5 ms-3"> {{__('ui.buyNow')}}<i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
+        <button class="btn5 ms-2">{{__('ui.addToCart')}} <i class="fa-solid fa-cart-plus"></i></button>
       </div>
 
      
     
         <div class="mt-5 d-flex justify-content-start">
-          <a class="btn btn-register-login mt-3 w-30 p-3 " href="{{route('item.index')}}">Tutti gli annunci</a>
-          <a class="btn btn-home mt-3 w-30 p-3" href="{{route('homepage')}}">Torna alla Home</a>
+          <a class="btn btn-register-login mt-3 w-30 p-3 " href="{{route('item.index')}}">{{__('ui.allAnnouncement')}}</a>
+          <a class="btn btn-home mt-3 w-30 p-3" href="{{route('homepage')}}">{{__('ui.backToHome')}}</a>
         </div>
 
   </div>

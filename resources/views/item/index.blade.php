@@ -1,6 +1,6 @@
 <x-layout>
     
-    <x-header>Tutti gli Annunci</x-header>
+    <x-header>{{__('ui.allAnnouncement')}}</x-header>
     
     <main class="container my-5">
         <div class="row justify-content-center">
@@ -16,7 +16,7 @@
             @empty
             <div class="col-12">
                 <div class="alert alert-warning">
-                    <p>Non ci sono annunci per questa ricerca.</p>
+                    <p>{{__('ui.noFound')}}</p>
                 </div>
             </div>
             @endforelse

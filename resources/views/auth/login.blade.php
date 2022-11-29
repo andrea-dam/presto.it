@@ -27,11 +27,11 @@
                         <a href="{{route('homepage')}}" role="button" class="btn text-light"><i class="fa-solid fa-house"></i></a>
                     </div>
                     <div class="mb-4 mt-4">
-                        <label for="email" class="form-label">Indirizzo Email</label>
+                        <label for="email" class="form-label">{{__('ui.emailAddress')}}</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">{{__('ui.password')}}</label>
                         <div class="input-group">
                             <input type="password" class="form-control" id="password" name="password">
                             <span class="input-group-text">
@@ -44,13 +44,13 @@
                     <div class="mb-4 form-check d-flex flex-column flex-md-row justify-content-between align-items-center">
                         <div>
                             <input id="detail-button" type="checkbox" class="form-check-input" id="remember" name="remember">
-                            <label for="remember" class="form-check-label">Ricordami</label>
+                            <label for="remember" class="form-check-label">{{__('ui.remember')}}</label>
                         </div>
                         <div>
-                            <a href="{{route('register')}}" class="text-decoration-none text-light">Non hai un account? Registrati</a>
+                            <a href="{{route('register')}}" class="text-decoration-none text-light">{{__('ui.noAccount')}}</a>
                         </div>
                     </div>
-                    <button type="submit" class="btn3 btn border w-100 py-3">Accedi</button>
+                    <button type="submit" class="btn3 btn border w-100 py-3">{{__('ui.login')}}</button>
                 </form>
             </div>
         </div>

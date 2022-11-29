@@ -8,12 +8,13 @@
 </head>
 <body>
     <div>
-        <h1>l'utente {{$user->name}} ha richiesto di collaborare con noi</h1>
+        <h1>{{$user->name}} {{__('ui.requestToCollaborate')}}</h1>
         <ol>
-            <li>Nome: {{$user->name}}</li>
-            <li>email: {{$user->email}}</li>
-            <a href="{{route('make.revisor', compact('user'))}}">rendi revisore</a>
+            <li>{{__('ui.name')}}: {{$user->name}}</li>
+            <li>{{__('ui.email')}}: {{$user->email}}</li>
+            <a href="{{route('make.revisor', compact('user'))}}">{{__('ui.makeAuditor')}}</a>
         </ol>
     </div>    
 </body>
 </html>
+

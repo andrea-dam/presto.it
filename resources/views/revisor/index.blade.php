@@ -44,21 +44,21 @@
                 <form action="{{route('revisor.reject_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-danger mt-3 w-100 p-3" type="submit">Rifiuta l'annuncio</button>
+                    <button class="btn btn-danger mt-3 w-100 p-3" type="submit">{{__('ui.rejectAd')}}</button>
                 </form>
             </div>
             <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.undo-item', ['item' => $item_to_undo])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-warning mt-3 w-100 p-3" type="submit">Annulla ultima modifica</button>
+                    <button class="btn btn-warning mt-3 w-100 p-3" type="submit">{{__('ui.undoChange')}}</button>
                 </form>
             </div>
             <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">Accetta l'annuncio</button>
+                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">{{__('ui.acceptAd')}}</button>
                 </form>
             </div>
             @endif
@@ -99,14 +99,14 @@
                 <form action="{{route('revisor.reject_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-danger mt-3 w-100 p-3" type="submit">Rifiuta l'annuncio</button>
+                    <button class="btn btn-danger mt-3 w-100 p-3" type="submit">{{__('ui.rejectAd')}}</button>
                 </form>
             </div>
             <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">Accetta l'annuncio</button>
+                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">{{__('ui.acceptAd')}}</button>
                 </form>
             </div>
             @endif
@@ -115,7 +115,7 @@
                 <form action="{{route('revisor.undo-item', ['item' => $item_to_undo])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-warning mt-3 w-100 p-3" type="submit">Annulla ultima modifica</button>
+                    <button class="btn btn-warning mt-3 w-100 p-3" type="submit">{{__('ui.undoChange')}}</button>
                 </form>
             </div>
             @endif
