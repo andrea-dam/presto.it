@@ -42,7 +42,7 @@ return[
     'nameArticle' => 'Nome articolo *',
     'category' => 'Categoria *',
     'chooseCategory' => 'Scegli la categoria dell\'annuncio',
-    'selectImage' => 'Seleziona le immagini descrittive*',
+    'selectImage' => 'Seleziona le immagini *',
         // 'preview' => 'Anteprima',
     'clear' => 'Cancella',
     'describe' => 'Descrivi il tuo articolo *',
@@ -96,7 +96,7 @@ return[
     // Footer
     'contacts' => 'Contatti',
     'warning' => 'Avviso',
-    'message' => 'Cliccando sul pulsante Continua verrà inviata una mail all\'admin di Presto.it con i tuoi dati per verificare la tua richiesta.',
+    'message' => 'Cliccando sul pulsante "Continua" verrà inviata una mail all\'admin di Presto.it con i tuoi dati per verificare la tua richiesta.',
     'continues' => 'Continua',
     'annuls' => 'Annulla',
     'becomeReviewer' => 'Diventa Revisore',
