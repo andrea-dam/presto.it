@@ -2,12 +2,13 @@
 
 namespace App\Http\Livewire;
 
-use App\Jobs\ResizeImage;
 use App\Models\Item;
 use Livewire\Component;
 use App\Models\Category;
-use Illuminate\Support\Facades\Auth;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 
 class CreateItemForm extends Component
 {
@@ -37,6 +38,7 @@ class CreateItemForm extends Component
                 }
             }
     }
+
     public function removeImage($key){
         if(in_array($key, array_keys($this->images))){
             unset($this->images[$key]);
@@ -64,10 +66,10 @@ class CreateItemForm extends Component
                 $newImage = $item->images()->create(['path'=>$image->store($newFileName, 'public')]);
        
                 dispatch(new ResizeImage($newImage->path, 1200, 900));
+                dispatch(new ResizeImage($newImage->path, 400, 300));
             }
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
-
 
         session()->flash('itemCreated', 'Hai inserito con successo il tuo annuncio!');
         $this->reset();
