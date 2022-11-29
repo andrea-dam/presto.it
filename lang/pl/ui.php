@@ -4,7 +4,7 @@ return[
      // Navbar
      'home' => 'Home',
      'newAnnouncement' => 'stwórz ogłoszenie',
-     'auditorArea' => 'strefa kontroli',
+     'revisorArea' => 'strefa kontroli',
      'allAnnouncement' => 'wszystkie ogłoszenia',
      'welcome' => 'Witaj',
      'login' => 'Zaloguj się',
@@ -13,21 +13,21 @@ return[
      'search' => 'szukaj ogłoszeń',
  
      // Inserisci un annuncio
-     'enterAnnouncement' => 'stwórz ogłoszenie',
+    //  'enterAnnouncement' => 'stwórz ogłoszenie',
  
      // Tutti gli Annunci
          // 'allAnnouncement' => 'Tutti gli Annunci',
-     'noFound' => 'nie znaleźliśmy ogłoszeń',
+     'notFound' => 'nie znaleźliśmy ogłoszeń',
  
      // Scopri di più
      'fastShipping' => 'Szypka spedycja',
-     'evidence' => 'Pròba Plus gratis na 30 dni',
-     'expedition' => 'Spedycja standardowa',
-     'gratis' => 'Gratis',
+     'freeTrial' => 'Pròba Plus gratis na 30 dni',
+     'shipping' => 'Spedycja standardowa',
+     'free' => 'Gratis',
      'reviews' => 'Oceny (0)',
      'packaging' => 'Opakowanie nie uciążliwe dla środowiska',
-     'expeditions' => 'Wszyskie opakowania użyte podczas produkcji są 100% poddane recyklingowi.',
-     'rendered' => 'łatwe zwroty',
+     'shippings' => 'Wszyskie opakowania użyte podczas produkcji są 100% poddane recyklingowi.',
+     'simpleReturns' => 'łatwe zwroty',
      'goods' => 'Masz 14 dni roboczych od daty otrzymania towaru na skorzystanie z prawa zwrotu.',
      'securePayments' => 'Bezpieczne płatności',
      'payments' => 'Płatności kartą kredytową, Paypal, bezpośrednim przelewem bankowym, Scalapay i za pobraniem.',
@@ -57,8 +57,9 @@ return[
      // Pagina revisore
      'rejectAd' => 'odrzucić ogłoszenie',
      'undoChange' => 'cofnij ostatnią zmianę',
-     'acceptAd' => 'zaakceptuj ogłoszenie',
- 
+     'approveAd' => 'zaakceptuj ogłoszenie',
+     'itemToCheck' => 'Ogłoszenia do kontroli',
+     'noItemToCheck' => 'Nie ma ogłoszeń do kontrolowania',
      // Home
      'slogan' => 'Zakupy u ciebie w domu',
      'allCategories' => 'Wszysykie Kategorje',
@@ -95,7 +96,7 @@ return[
      'contacts' => 'Kontakty',
      'warning' => 'Uwaga',
      'message' => 'klikając na przycisk "kontynuuj" twoje dane osobowe będą wysyłane przez email do admina strony Presto.it aby zweryfikować twòj wniosek.',
-     'continues' => 'kontynuuj',
+     'continue' => 'kontynuuj',
      'cancel' => 'Anuluj',
      'becomeRevisor' => 'Zostań kontrolerem',
      'changeLanguage' => 'Zmien język',

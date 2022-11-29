@@ -67,22 +67,18 @@
           @error('temporary_images.*')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         @if ($images)
-        <div class="row">
-          <div class="col-12">
-            <p>{{__('ui.preview')}}:</p>
-            <div class="row">
-              <div class="container text-center">
-                <div class="row row-cols-4">
-                  @foreach ($images as $key => $image)
-                  <div class="col">
-                    <div class="d-flex flex-column justify-content-between h-100">
-                      <img class="img-fluid" src="{{$image->temporaryUrl()}}" alt="">
-                      <button type="button" class="btn btn-danger my-3" wire:click="removeImage({{$key}})">{{__('ui.clear')}}</button>
-                    </div>
-                  </div>
-                  @endforeach
+        <div class="col-12">
+          <p>{{__('ui.preview')}}:</p>
+          <div class="container text-center">
+            <div class="row row-cols-2 row-cols-lg-4">
+              @foreach ($images as $key => $image)
+              <div class="col">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <img class="img-fluid" src="{{$image->temporaryUrl()}}" alt="">
+                  <button type="button" class="btn btn-danger my-3" wire:click="removeImage({{$key}})">{{__('ui.clear')}}</button>
                 </div>
               </div>
+              @endforeach
             </div>
           </div>
         </div>

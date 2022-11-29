@@ -59,7 +59,7 @@ return [
     // Pagina revisore
     'rejectAd' => 'Rifiuta l\'annuncio',
     'undoChange' => 'Annulla l\'ultima modifica',
-    'acceptAd' => 'Accetta l\'annuncio',
+    'approveAd' => 'Accetta l\'annuncio',
     'itemToCheck' => 'Annuncio da revisionare',
     'noItemToCheck' => 'Nessun Annuncio da revisionare',
 
