@@ -8,7 +8,12 @@
       title="{{null}}"
       price="{{null}}"
       />
-      @elseif($errors->has('title'))
+      @elseif ($errors->has('title') && strlen($price) < 1)
+      <x-card 
+      title="{{null}}"
+      price="{{$price}}"
+      />
+      @elseif($errors->has('title') && !strlen($price) < 1)
       <x-card 
       title="{{null}}"
       price="{{$price}}€"
@@ -57,8 +62,8 @@
           @error('category')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         <div class="mb-3">
-            <label for="image" class="mb-2">{{__('ui.selectImage')}}</label>
-            <input type="file" wire:model="temporary_images" name="images" id="image" multiple class="form-control @error('temporary_images.*') is-invalid @enderror">
+          <label for="image" class="mb-2">{{__('ui.selectImage')}}</label>
+          <input type="file" wire:model="temporary_images" name="images" id="image" multiple class="form-control @error('temporary_images.*') is-invalid @enderror">
           @error('temporary_images.*')<span class="text-danger fst-italic small">{{$message}}</span>@enderror
         </div>
         @if ($images)
@@ -66,12 +71,18 @@
           <div class="col-12">
             <p>{{__('ui.preview')}}:</p>
             <div class="row">
-              @foreach ($images as $key => $image)
-              <div class="col">
-                <div class="image-preview" style="background-image: url({{$image->temporaryUrl()}});"></div>
-                <button type="button" class="btn btn-danger" wire:click="removeImage({{$key}})">{{__('ui.clear')}}</button>
+              <div class="container text-center">
+                <div class="row row-cols-4">
+                  @foreach ($images as $key => $image)
+                  <div class="col">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <img class="img-fluid" src="{{$image->temporaryUrl()}}" alt="">
+                      <button type="button" class="btn btn-danger my-3" wire:click="removeImage({{$key}})">{{__('ui.clear')}}</button>
+                    </div>
+                  </div>
+                  @endforeach
+                </div>
               </div>
-              @endforeach
             </div>
           </div>
         </div>

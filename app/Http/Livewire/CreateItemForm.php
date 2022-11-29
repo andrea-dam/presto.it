@@ -17,7 +17,7 @@ class CreateItemForm extends Component
     public $title, $category, $description, $price, $temporary_images, $images = [];
 
     protected $rules = [
-        'title' => 'required|min:2|max:50',
+        'title' => 'required|min:2|max:30',
         'category' => 'required',
         'description' => 'required|min:2',
         'price' => 'required|regex:/^[0-9\.,]+$/|not_in:0',
