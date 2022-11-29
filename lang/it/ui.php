@@ -60,6 +60,8 @@ return [
     'rejectAd' => 'Rifiuta l\'annuncio',
     'undoChange' => 'Annulla l\'ultima modifica',
     'acceptAd' => 'Accetta l\'annuncio',
+    'itemToCheck' => 'Annuncio da revisionare',
+    'noItemToCheck' => 'Nessun Annuncio da revisionare',
 
     // Home
     'slogan' => 'Lo shopping a casa tua',
@@ -100,4 +102,6 @@ return [
     'continue' => 'Continua',
     'cancel' => 'Annulla',
     'becomeRevisor' => 'Diventa Revisore',
+    'changeLanguage' => 'Cambia Lingua',
+    'social' => 'Seguici sulle nostre pagine Social:'
 ];

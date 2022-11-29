@@ -4,7 +4,7 @@
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
+      <span>{{__('ui.social')}}</span>
     </div>
     <!-- Left -->
     
@@ -42,10 +42,6 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 id="logo-navbar" class="mb-4 logo-navbar">Presto.it</h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
         </div>
         <!-- Grid column -->
         
@@ -104,7 +100,7 @@
           <!-- Button trigger modal -->
           <i class="fa-solid fa-toolbox"></i>
           <button type="button" class="btn text-light mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            {{__('ui.becomeReviewer')}}
+            {{__('ui.becomeRevisor')}}
           </button>
           
           <!-- Modal -->
@@ -119,14 +115,14 @@
                   {{__('ui.message')}}
                 </div>
                 <div class="modal-footer">
-                  <a href="{{route('become.revisor')}}" class="text-white me-2 btn-register-login btn shadow"> {{__('ui.continues')}}</a>
-                  <button type="button" class="text-white btn-home btn shadow" data-bs-dismiss="modal">{{__('ui.annuls')}}</button>
+                  <a href="{{route('become.revisor')}}" class="text-white me-2 btn-register-login btn shadow"> {{__('ui.continue')}}</a>
+                  <button type="button" class="text-white btn-home btn shadow" data-bs-dismiss="modal">{{__('ui.cancel')}}</button>
                 </div>
               </div>
             </div>
           </div>
           <p><i  class="fas fa-envelope me-3 text-secondary text-light"></i>
-            info@example.com
+            info@presto.it
           </p>
           <p><i  class="fas fa-phone me-3 text-secondary text-light"></i> + 01 234 567 88</p>
           <p><i  class="fas fa-print me-3 text-secondary text-light"></i> + 01 234 567 89</p>

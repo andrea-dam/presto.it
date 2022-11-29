@@ -4,7 +4,7 @@
         {{ session('message') }}
     </div>
     @endif
-    <x-header>{{$item_to_check ? 'Annuncio da Revisionare' : 'Nessun annuncio da revisionare'}}</x-header>
+    <x-header>@if($item_to_check) {{__('ui.itemToCheck')}} @else {{__('ui.noItemToCheck')}} @endif</x-header>
     <div class="container min-vh-100"> 
         <div class="row justify-content-center mb-3">
             @if($item_to_undo && $item_to_check)
@@ -58,7 +58,7 @@
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">{{__('ui.acceptAd')}}</button>
+                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">{{__('ui.approveAd')}}</button>
                 </form>
             </div>
             @endif
@@ -106,7 +106,7 @@
                 <form action="{{route('revisor.accept_item', ['item' => $item_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">{{__('ui.acceptAd')}}</button>
+                    <button class="btn btn-success mt-3 w-100 p-3" type="submit">{{__('ui.approveAd')}}</button>
                 </form>
             </div>
             @endif

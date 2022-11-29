@@ -8,11 +8,11 @@
 </head>
 <body>
     <div>
-        <h1>{{$user->name}} {{__('ui.requestToCollaborate')}}</h1>
+        <h1>{{$user->name}} vuole collaborare con noi</h1>
         <ol>
-            <li>{{__('ui.name')}}: {{$user->name}}</li>
-            <li>{{__('ui.email')}}: {{$user->email}}</li>
-            <a href="{{route('make.revisor', compact('user'))}}">{{__('ui.makeAuditor')}}</a>
+            <li>Nome: {{$user->name}}</li>
+            <li>Email: {{$user->email}}</li>
+            <a href="{{route('make.revisor', compact('user'))}}">Rendi Revisore</a>
         </ol>
     </div>    
 </body>

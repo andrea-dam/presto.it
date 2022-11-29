@@ -15,7 +15,7 @@
                 </li>
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link {{Route::is('revisor.index') ? 'active' : ''}}" href="{{route('revisor.index')}}">{{__('ui.auditorArea')}}
+                    <a class="nav-link {{Route::is('revisor.index') ? 'active' : ''}}" href="{{route('revisor.index')}}">{{__('ui.revisorArea')}}
                         <span class="badge p-1 position-absolute translate-middle bg-danger rounded-circle">{{App\Models\Item::toBeRevisionedCount()}}</span>
                     </a>
                 </li>

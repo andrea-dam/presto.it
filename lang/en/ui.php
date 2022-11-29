@@ -56,7 +56,9 @@ return [
     // Pagina revisore
     'rejectAd' => 'Reject Ad',
     'undoChange' => 'Undo your last decision',
-    'acceptAd' => 'Accept Ad',
+    'approveAd' => 'Approve Ad',
+    'itemToCheck' => 'Ad to Approve',
+    'noItemToCheck' => 'There is no Ad that needs to be approved',
 
     // Home
     'slogan' => 'Shop from your home\'s comfort.',
@@ -80,7 +82,7 @@ return [
     'emailAddress' => 'Email Address',
     'password' => 'Password',
     'remember' => 'Remember Me',
-    'noAccount' => 'Not a customer? Sign In here',
+    'noAccount' => 'Not a customer? Sign In Here',
     // 'login' => 'Accedi',
 
     // Registrati
@@ -97,4 +99,6 @@ return [
     'continue' => 'Continue',
     'cancel' => 'Cancel',
     'becomeRevisor' => 'Become Revisor',
+    'changeLanguage' => 'Change Language',
+    'social' => 'Get connected with us on social networks:'
 ];
