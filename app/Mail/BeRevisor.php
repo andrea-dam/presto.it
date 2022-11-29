@@ -33,7 +33,7 @@ class BeRevisor extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'richiesta di assunzione come revisore',
+            subject: 'Richiesta di assunzione come revisore',
         );
     }
 
