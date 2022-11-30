@@ -75,19 +75,19 @@
           <p>
             <form class="bg-transparent" action="{{route('set_language_locale',['lang' => 'it'])}}" method="POST">
               @csrf
-              <button class="p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-it.svg')}}" width="32" height="34" alt=""></button>
+              <button class="flag p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-it.svg')}}" width="32" height="34" alt=""></button>
             </form>
           </p>
           <p>
             <form class="bg-transparent" action="{{route('set_language_locale',['lang' => 'en'])}}" method="POST">
               @csrf
-              <button class="p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-en.svg')}}" width="32" height="34" alt=""></button>
+              <button class="flag p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-en.svg')}}" width="32" height="34" alt=""></button>
             </form>
           </p>
           <p>
               <form class="bg-transparent" action="{{route('set_language_locale',['lang' => 'pl'])}}" method="POST">
                 @csrf
-                <button class="p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-pl.svg')}}" width="32" height="34" alt=""></button>
+                <button class="flag p-0 border-0 bg-transparent" type="submit"><img class="p-0 border-0 m-0" src="{{asset('vendor/blade-flags/language-pl.svg')}}" width="32" height="34" alt=""></button>
               </form>
           </p>
         </div>

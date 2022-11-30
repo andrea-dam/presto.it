@@ -16,7 +16,7 @@
             @empty
             <div class="col-12">
                 <div class="alert alert-warning">
-                    <p>{{__('ui.noFound')}}</p>
+                    <p>{{__('ui.notFound')}}</p>
                 </div>
             </div>
             @endforelse

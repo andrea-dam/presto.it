@@ -44,12 +44,12 @@
           <div class="card p-3">
             <i class="fa-solid fa-truck-fast mb-2"></i>
             <h5 class="card-title"> {{__('ui.fastShipping')}}</h5>
-            <p class="card-text">{{__('ui.evidence')}}</p>
+            <p class="card-text">{{__('ui.freeTrial')}}</p>
           </div>
           <div class="card p-3 mt-3">
             <i class="fa-solid fa-truck mb-2"></i>
-            <h5 class="card-title">{{__('ui.expedition')}}</h5>
-            <p class="card-text">{{__('ui.gratis')}}</p>
+            <h5 class="card-title">{{__('ui.shipping')}}</h5>
+            <p class="card-text">Gratis</p>
           </div>
         </div>
         
@@ -81,7 +81,7 @@
               {{__('ui.packaging')}}
             </summary>
             <p>
-              {{__('ui.expeditions')}}
+              {{__('ui.shippings')}}
             </p>
           </details>
         </section>
@@ -94,7 +94,7 @@
                   <i class="text-light fa-solid fa-circle fa-stack-2x"></i>
                   <i class="text-secondary fa-solid fa-box-open fa-stack-1x fa-inverse"></i>
                 </div>
-                {{__('ui.rendered')}}
+                {{__('ui.simpleReturns')}}
               </summary>
               <p>
                 {{__('ui.goods')}}
