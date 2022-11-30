@@ -39,6 +39,16 @@
                 <h2 class="text-start">{{$item_to_check->category->name}}</h2>
                 <h2 class="text-start text-danger">{{$item_to_check->price}} €</h2>
                 <h5 class="text-start">{{$item_to_check->description}}</h5>
+                <div class="col md-3">
+                    <div class="card-body">
+                      @foreach($item_to_check->images as $image)
+                      <h5 class="tc-accent"> Revisione Immagini</h5>
+                      <p>Adulti: <span class "{{$image->adult}}"</span></p>
+                      <p>Satira: <span></span> </p>
+                      <p>Medicina: <span></span>  </p>
+                      <p>Violenza: <span></span> </p>
+                      <p>Contenuto Ammiccante:<span></span> </p>
+                     @endforeach
             </div>
             <div class="col-12 col-md-3 col-lg-3">
                 <form action="{{route('revisor.reject_item', ['item' => $item_to_check])}}" method="POST">
