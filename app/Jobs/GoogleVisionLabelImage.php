@@ -20,7 +20,10 @@ class GoogleVisionLabelImage implements ShouldQueue
      *
      * @return void
      */
+
+
     private $item_image_id;
+
     public function __construct($item_image_id)
     {
         $this->item_image_id = $item_image_id;
@@ -34,7 +37,7 @@ class GoogleVisionLabelImage implements ShouldQueue
     public function handle()
     {
         $i = Image::find($this->item_image_id);
-        dd($i);
+  
         if (!$i) {
             return;
         }
@@ -43,7 +46,7 @@ class GoogleVisionLabelImage implements ShouldQueue
 
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
         $imageAnnotator = new ImageAnnotatorClient();
-        $response = $imageAnnotator->safeSearchDetection($image);
+        $response = $imageAnnotator->labelDetection($image);
         $labels = $response->getLabelAnnotations();
 
         if($labels){
