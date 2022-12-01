@@ -170,6 +170,7 @@
                     <x-card 
                     title="{{$item->title}}"
                     price="{{$item->price}}€"
+                    :coverImg="$item->images()->get() ? $item->images->first() : 'https://picsum.photos/900/1200'"
                     />
                 </a>
             </div>

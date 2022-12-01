@@ -18,7 +18,7 @@ class CreateItemForm extends Component
 {
     use WithFileUploads;
 
-    public $title, $category, $description, $price, $temporary_images, $images = [];
+    public $title, $category, $description, $price, $temporary_images, $images = [], $previewKey = 0;
 
     protected $rules = [
         'title' => 'required|min:2|max:30',
@@ -43,11 +43,19 @@ class CreateItemForm extends Component
             }
     }
 
+  
+
+    public function selectPreview($key){
+        $this->previewKey = $key;
+        }
+
     public function removeImage($key){
         if(in_array($key, array_keys($this->images))){
             unset($this->images[$key]);
         }
     }
+
+ 
 
     public function store(){
         $numFormat = str_replace(",",".",$this->price);
@@ -62,17 +70,26 @@ class CreateItemForm extends Component
             'price' => $secondFloatRound,
             'user_id' => Auth::user()->id
         ]);
+
+        
         
         if(count($this->images)){
+            $previewImage = $this->images[$this->previewKey];
+            if(in_array($this->previewKey, array_keys($this->images))){
+                unset($this->images[$this->previewKey]);
+            }
+            array_unshift($this->images,$previewImage);
             foreach($this->images as $image){
                 
+                
+                // dd($this->images);
                 $newFileName = "items/{$item->id}";
                 
                 $newImage = $item->images()->create(['path'=>$image->store($newFileName, 'public')]);
-       
+                
                 RemoveFaces::withChain([
                     new ResizeImage($newImage->path, 1200, 900),
-                    new ResizeImage($newImage->path, 400, 300),
+                    new ResizeImage($newImage->path, 900, 1200),
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id),
                     // new WaterMark($newImage->id),
