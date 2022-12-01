@@ -40,7 +40,7 @@
         <h2 class="text-start">{{$item->title}} ({{$item->category->name}})</h2>
         <h2 class="text-start text-danger">{{$item->price}} €</h2>
         <h5 class="text-start">{{$item->description}}</h5>
-        <div class="px-5 mt-4">
+        {{-- <div class="px-5 mt-4">
           <div class="card p-3">
             <i class="fa-solid fa-truck-fast mb-2"></i>
             <h5 class="card-title"> {{__('ui.fastShipping')}}</h5>
@@ -51,9 +51,9 @@
             <h5 class="card-title">{{__('ui.shipping')}}</h5>
             <p class="card-text">Gratis</p>
           </div>
-        </div>
+        </div> --}}
         
-        <div class="d-flex mb-3 mt-3">
+        {{-- <div class="d-flex mb-3 mt-3">
           <h5 class="me-auto p-3">{{__('ui.reviews')}}</h5>
           <div class="c4l-rating p-2">
             <input name="c4l-rating" type="radio" id="c4l-rate1" value="1" />
@@ -67,7 +67,7 @@
             <input name="c4l-rating" type="radio" id="c4l-rate5" value="5" checked />
             <label for="c4l-rate5"></label>
           </div>
-        </div>
+        </div> --}}
 
         
       <div class="card p-3 mt-3">
@@ -119,7 +119,7 @@
             </section>
             </div>
 
-        <button class="btn5 mt-5 ms-3"> {{__('ui.buyNow')}}<i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
+        <button class="btn5 mt-5 ms-3"> {{__('ui.buyNow')}}<i class="fa-sharp fa-solid fa-bag-shopping ms-2"></i></button>
         <button class="btn5 ms-2">{{__('ui.addToCart')}} <i class="fa-solid fa-cart-plus"></i></button>
       </div>
 

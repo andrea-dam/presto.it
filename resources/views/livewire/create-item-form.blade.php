@@ -6,7 +6,7 @@
       @if ($images)
         {{-- @if ($errors->has('title') && $errors->has('price')) --}}
         <div class="card border-0 text-bg-dark">
-          <img src="{{$images[$previewKey]->temporaryUrl()}}" style="height: 700px;" class="card-img" alt="{{$title}}">
+          <img src="{{$images[$previewKey]->temporaryUrl()}}" class="img-fluid" alt="{{$title}}">
           {{-- <div class="sfondo-sfocato"></div> --}}
           <div class="rounded-bottom testo-card text-center fw-bold p-3">
               <h5 id="card-title" class="card-title">{{$title}}</h5>
@@ -85,7 +85,7 @@
               @foreach ($images as $key => $image)
               <div class="col">
                 <div class="d-flex flex-column justify-content-between h-100">
-                  <button type="button" wire:click="selectPreview({{$key}})"><img class="img-fluid" src="{{$image->temporaryUrl()}}" alt=""></button>
+                  <button type="button" class="btn p-0" wire:click="selectPreview({{$key}})"><img class="img-fluid" src="{{$image->temporaryUrl()}}" alt=""></button>
                   <button type="button" class="btn btn-danger my-3" wire:click="removeImage({{$key}})">{{__('ui.clear')}}</button>
                 </div>
               </div>

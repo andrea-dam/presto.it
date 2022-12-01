@@ -98,7 +98,7 @@ class CreateItemForm extends Component
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
-        session()->flash('itemCreated', 'Hai inserito con successo il tuo annuncio!');
+        session()->flash('itemCreated', 'Hai inserito con successo il tuo annuncio, sarà pubblicato dopo la revisione.');
         $this->reset();
     }
 
