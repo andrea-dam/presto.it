@@ -1,3 +1,7 @@
+@import "./fonts/cabin.css";
+@import "./fonts/catamaran.css";
+@import "./fonts/kaushan.css";
+@import "./fonts/playball.css";
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import "bootstrap";
 @import "style";
