@@ -10,6 +10,7 @@ use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\WaterMark;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
@@ -73,7 +74,8 @@ class CreateItemForm extends Component
                     new ResizeImage($newImage->path, 1200, 900),
                     new ResizeImage($newImage->path, 400, 300),
                     new GoogleVisionSafeSearch($newImage->id),
-                    new GoogleVisionLabelImage($newImage->id)
+                    new GoogleVisionLabelImage($newImage->id),
+                    // new WaterMark($newImage->id),
                 ])->dispatch($newImage->id);
             }
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
