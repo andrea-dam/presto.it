@@ -3,7 +3,7 @@
 return [
     // Navbar
     'home' => 'Home',
-    'newAnnouncement' => 'Inserisci annuncio',
+    'newAnnouncement' => 'Inserisci Annuncio',
     'revisorArea' => 'Area Revisore',
     'allAnnouncement' => 'Tutti gli Annunci',
     'welcome' => 'Benvenutə',
@@ -37,7 +37,8 @@ return [
     'backToHome' => 'Torna alla Home',
 
     // Sezione con anteprima annuncio
-    'preview' => 'Anteprima',
+    'preview' => 'Anteprima (scegli immagine)',
+    'cardPreview' => 'Anteprima',
     'requiredFields' => 'I campi contrassegnati con * sono obbligatori',
     'nameArticle' => 'Nome articolo *',
     'category' => 'Categoria *',
@@ -58,8 +59,7 @@ return [
 
     // Pagina revisore
     'rejectAd' => 'Rifiuta l\'annuncio',
-    'undoChange' => 'Annulla l\'ultima modifica',
-    'approveAd' => 'Accetta l\'annuncio',
+    'undoChange' => 'Annulla l\'ultimo rifiuto',
     'itemToCheck' => 'Annuncio da revisionare',
     'noItemToCheck' => 'Nessun Annuncio da revisionare',
 

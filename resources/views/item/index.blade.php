@@ -2,7 +2,7 @@
     
     <x-header>{{__('ui.allAnnouncement')}}</x-header>
     
-    <main class="container my-5">
+    <main class="container my-5 min-vh-100">
         <div class="row justify-content-center">
             @forelse ($items as $item)
             <div class="col-12 item col-md-6 col-lg-3 mt-4">

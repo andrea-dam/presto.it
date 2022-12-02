@@ -26,7 +26,7 @@
                 <div class="mb-3">
                   @if ($image->labels)
                   @foreach ($image->labels as $label)
-                  <p class="d-inline text-dark">{{$label}}</p>
+                  <p class="d-inline text-dark">#{{$label}}</p>
                   @endforeach
                   @endif
                 </div>
@@ -100,9 +100,11 @@
                 <img src="{{$image->getUrl(1200, 900)}}" class="d-block w-100" alt="...">
                 <div class="mt-3 pb-3" style="height: 21rem">
                   <div class="mb-3">
+                    @if ($image->labels)
                     @foreach ($image->labels as $label)
-                    <p class="d-inline text-dark">{{$label}}</p>
+                      <p class="d-inline text-dark">#{{$label}}</p>
                     @endforeach
+                    @endif
                   </div>
                   <p>Adulti: <span class="{{$image->adult}}"></span></p>
                   <p>Satira: <span class="{{$image->spoof}}"></span></p>

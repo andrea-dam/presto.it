@@ -38,7 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-    background-color: rgba(255, 244, 236, 0.674);
+    background-color: rgba(95, 26, 55, 0.784);
+    color: white;
 }
 
 /* Navbar */
@@ -132,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
+}
+
+.preview-img:hover{
+    transform: scale(1.2);
 }
 
 .testo-card{

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\App;
 class PublicController extends Controller
 {
     public function homepage() {
-        $items = Item::orderBy('created_at', 'DESC')->take(4)->get();
+        $items = Item::where('is_accepted', true)->orderBy('created_at', 'DESC')->take(4)->get();
         return view('homepage', compact('items'));
     }
 

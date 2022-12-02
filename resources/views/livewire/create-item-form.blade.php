@@ -1,50 +1,57 @@
 <div class="container mb-5">
   <div class="row align-items-center">
     <div class="p-5 col-12 col-md-6 d-flex flex-column align-items-center">
-      <h2 class="text-center">{{__('ui.preview')}}</h2>
+      <h2 class="text-center">{{__('ui.cardPreview')}}</h2>
       {{-- logica per determinare cosa viene visto sulla card --}}
-      @if ($images)
-        {{-- @if ($errors->has('title') && $errors->has('price')) --}}
+        @if ($errors->has('title') && $errors->has('price'))
         <div class="card border-0 text-bg-dark">
-          <img src="{{$images[$previewKey]->temporaryUrl()}}" class="img-fluid" alt="{{$title}}">
-          {{-- <div class="sfondo-sfocato"></div> --}}
+          <img src="{{$images ? $images[$previewKey]->temporaryUrl() : 'https://picsum.photos/900/1200'}}" class="img-fluid" alt="{{$title}}">
+          <div class="rounded-bottom testo-card text-center fw-bold p-3">
+              <h5 id="card-title" class="card-title">{{null}}</h5>
+              <h6 class="card-text fs-2">{{null}}</h6>
+          </div>
+        </div> 
+        @elseif ($errors->has('title') && strlen($price) < 1)
+        <div class="card border-0 text-bg-dark">
+          <img src="{{$images ? $images[$previewKey]->temporaryUrl() : 'https://picsum.photos/900/1200'}}" class="img-fluid" alt="{{$title}}">
+          <div class="rounded-bottom testo-card text-center fw-bold p-3">
+              <h5 id="card-title" class="card-title">{{null}}</h5>
+              <h6 class="card-text fs-2">{{$price}}</h6>
+          </div>
+        </div> 
+        @elseif($errors->has('title') && !strlen($price) < 1)
+        <div class="card border-0 text-bg-dark">
+          <img src="{{$images ? $images[$previewKey]->temporaryUrl() : 'https://picsum.photos/900/1200'}}" class="img-fluid" alt="{{$title}}">
+          <div class="rounded-bottom testo-card text-center fw-bold p-3">
+              <h5 id="card-title" class="card-title">{{null}}</h5>
+              <h6 class="card-text fs-2">{{$price}}€</h6>
+          </div>
+        </div> 
+        @elseif($errors->has('price'))
+        <div class="card border-0 text-bg-dark">
+          <img src="{{$images ? $images[$previewKey]->temporaryUrl() : 'https://picsum.photos/900/1200'}}" class="img-fluid" alt="{{$title}}">
+          <div class="rounded-bottom testo-card text-center fw-bold p-3">
+              <h5 id="card-title" class="card-title">{{$title}}</h5>
+              <h6 class="card-text fs-2">{{null}}</h6>
+          </div>
+        </div>
+        @elseif(strlen($price) < 1)
+        <div class="card border-0 text-bg-dark">
+          <img src="{{$images ? $images[$previewKey]->temporaryUrl() : 'https://picsum.photos/900/1200'}}" class="img-fluid" alt="{{$title}}">
           <div class="rounded-bottom testo-card text-center fw-bold p-3">
               <h5 id="card-title" class="card-title">{{$title}}</h5>
               <h6 class="card-text fs-2">{{$price}}</h6>
           </div>
-      </div> 
-        {{-- @elseif ($errors->has('title') && strlen($price) < 1)
-        <x-card 
-        title="{{null}}"
-        price="{{$price}}"
-        :coverImg="$image->get() ? $image->temporaryUrl() : 'https://picsum.photos/900/1200'"
-        />
-        @elseif($errors->has('title') && !strlen($price) < 1)
-        <x-card 
-        title="{{null}}"
-        price="{{$price}}€"
-        :coverImg="$image->get() ? $image->temporaryUrl() : 'https://picsum.photos/900/1200'"
-        />
-        @elseif($errors->has('price'))
-        <x-card 
-        title="{{$title}}"
-        price="{{null}}"
-        :coverImg="$image->get() ? $image->temporaryUrl() : 'https://picsum.photos/900/1200'"
-        />
-        @elseif(strlen($price) < 1)
-        <x-card 
-        title="{{$title}}"
-        price="{{$price}}"
-        :coverImg="$image->get() ? $image->temporaryUrl() : 'https://picsum.photos/900/1200'"
-        />
+        </div>
         @else
-        <x-card 
-        title="{{$title}}"
-        price="{{$price}}€"
-        :coverImg="$image->get() ? $image->temporaryUrl() : 'https://picsum.photos/900/1200'"
-        />
-        @endif  --}}
-      @endif
+        <div class="card border-0 text-bg-dark">
+          <img src="{{$images ? $images[$previewKey]->temporaryUrl() : 'https://picsum.photos/900/1200'}}" class="img-fluid" alt="{{$title}}">
+          <div class="rounded-bottom testo-card text-center fw-bold p-3">
+              <h5 id="card-title" class="card-title">{{$title}}</h5>
+              <h6 class="card-text fs-2">{{$price}}€</h6>
+          </div>
+        </div>
+        @endif
     </div>
     <div class="col-12 col-md-6">
       <form wire:submit.prevent="store" id="shadow">
@@ -85,7 +92,7 @@
               @foreach ($images as $key => $image)
               <div class="col">
                 <div class="d-flex flex-column justify-content-between h-100">
-                  <button type="button" class="btn p-0" wire:click="selectPreview({{$key}})"><img class="img-fluid" src="{{$image->temporaryUrl()}}" alt=""></button>
+                  <button type="button" class="btn p-0" wire:click="selectPreview({{$key}})"><img class="img-fluid preview-img" src="{{$image->temporaryUrl()}}" alt=""></button>
                   <button type="button" class="btn btn-danger my-3" wire:click="removeImage({{$key}})">{{__('ui.clear')}}</button>
                 </div>
               </div>

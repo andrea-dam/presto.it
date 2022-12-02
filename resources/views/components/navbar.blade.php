@@ -9,10 +9,10 @@
                 <li class="nav-item">
                     <a class="nav-link {{Route::is('homepage') ? 'active' : ''}}" aria-current="page" href="{{route('homepage')}}">{{__('ui.home')}}</a>
                 </li>
-                @auth
                 <li class="nav-item">
                     <a class="nav-link {{Route::is('item.create') ? 'active' : ''}}" href="{{route('item.create')}}">{{__('ui.newAnnouncement')}}</a>
                 </li>
+                @auth
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
                     <a class="nav-link {{Route::is('revisor.index') ? 'active' : ''}}" href="{{route('revisor.index')}}">{{__('ui.revisorArea')}}
